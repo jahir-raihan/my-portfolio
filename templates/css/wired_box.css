@@ -1,0 +1,1405 @@
+.wired-blocks-design-v1 {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  gap: 5px;
+  margin: 2em 0;
+}
+.wired-blocks-design-v1 .block-left {
+  width: 100%;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 45% 55%;
+  gap: 5px;
+}
+.wired-blocks-design-v1 .block-left .b-l-left {
+  width: 100%;
+}
+.wired-blocks-design-v1 .block-left .b-l-left .b-l-l-top {
+  height: 30px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design-v1 .block-left .b-l-left .b-l-l-bottom {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+  gap: 5px;
+}
+.wired-blocks-design-v1 .block-left .b-l-left .b-l-l-bottom .b-l-l-b-left, .wired-blocks-design-v1 .block-left .b-l-left .b-l-l-bottom .b-l-l-b-right {
+  width: 100%;
+  height: 80px;
+  background: red;
+}
+.wired-blocks-design-v1 .block-left .b-l-right .b-l-r-top {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-bottom: 5px;
+}
+.wired-blocks-design-v1 .block-left .b-l-right .b-l-r-top .b-l-r-t-left, .wired-blocks-design-v1 .block-left .b-l-right .b-l-r-top .b-l-r-t-right {
+  height: 30px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v1 .block-left .b-l-right .b-l-r-bottom .b-l-r-b1 {
+  height: 60px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design-v1 .block-left .b-l-right .b-l-r-bottom .b-l-r-b2 {
+  height: 15px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v1 .block-right .b-r-top {
+  height: 70px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.wired-blocks-design-v1 .block-right .b-r-top .b-r-t-t {
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v1 .block-right .b-r-top .b-r-t-b {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 5px;
+  overflow: hidden;
+}
+.wired-blocks-design-v1 .block-right .b-r-top .b-r-t-b .b-r-t-b-left {
+  height: 35px;
+  background: red;
+  width: 100%;
+  background: red;
+  border: 1px solid red;
+}
+.wired-blocks-design-v1 .block-right .b-r-top .b-r-t-b .b-r-t-b-right {
+  margin-top: 5px;
+  height: 30px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v1 .block-right .b-r-bottom {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  overflow: hidden;
+  gap: 5px;
+}
+.wired-blocks-design-v1 .block-right .b-r-bottom .b-r-b-left {
+  height: 40px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v1 .block-right .b-r-bottom .b-r-b-right .b-r-b-r-top {
+  height: 20px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design-v1 .block-right .b-r-bottom .b-r-b-right .b-r-b-r-bottom {
+  height: 15px;
+  width: 100%;
+  background: red;
+}
+
+.wired-blocks-design-v2 {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  gap: 5px;
+  margin: 2em 0;
+}
+.wired-blocks-design-v2 .block-left {
+  width: 100%;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 45% 55%;
+  gap: 5px;
+}
+.wired-blocks-design-v2 .block-left .b-l-left {
+  width: 100%;
+}
+.wired-blocks-design-v2 .block-left .b-l-left .b-l-l-top {
+  height: 30px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design-v2 .block-left .b-l-left .b-l-l-bottom {
+  width: 100%;
+}
+.wired-blocks-design-v2 .block-left .b-l-left .b-l-l-bottom .b-l-l-b-top {
+  height: 30px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v2 .block-left .b-l-left .b-l-l-bottom .b-l-l-b-bottom {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  overflow: hidden;
+  gap: 5px;
+}
+.wired-blocks-design-v2 .block-left .b-l-left .b-l-l-bottom .b-l-l-b-bottom .b-l-l-b-b-left {
+  height: 50px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v2 .block-left .b-l-left .b-l-l-bottom .b-l-l-b-bottom .b-l-l-b-b-right {
+  width: 100%;
+  height: 45px;
+  background: red;
+  margin-top: 5px;
+}
+.wired-blocks-design-v2 .block-left .b-l-right .b-l-r-top {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 5px;
+}
+.wired-blocks-design-v2 .block-left .b-l-right .b-l-r-top .b-l-r-t-left {
+  height: 40px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v2 .block-left .b-l-right .b-l-r-top .b-l-r-t-right {
+  height: 40px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v2 .block-left .b-l-right .b-l-r-bottom .b-l-r-b1 {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.wired-blocks-design-v2 .block-left .b-l-right .b-l-r-bottom .b-l-r-b1 .b-l-r-b1-top {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.wired-blocks-design-v2 .block-left .b-l-right .b-l-r-bottom .b-l-r-b1 .b-l-r-b1-top .b-l-r-b1-t-left {
+  background: red;
+  height: 55px;
+  width: 100%;
+}
+.wired-blocks-design-v2 .block-left .b-l-right .b-l-r-bottom .b-l-r-b1 .b-l-r-b1-top .b-l-r-b1-t-right {
+  margin-top: 5px;
+  background: red;
+  height: 50px;
+  width: 100%;
+}
+.wired-blocks-design-v2 .block-left .b-l-right .b-l-r-bottom .b-l-r-b2 {
+  height: 15px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v2 .block-right .b-r-top {
+  height: 70px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.wired-blocks-design-v2 .block-right .b-r-top .b-r-t-t {
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v2 .block-right .b-r-top .b-r-t-b {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 5px;
+  overflow: hidden;
+}
+.wired-blocks-design-v2 .block-right .b-r-top .b-r-t-b .b-r-t-b-left {
+  height: 35px;
+  background: red;
+  width: 100%;
+  background: red;
+  border: 1px solid red;
+}
+.wired-blocks-design-v2 .block-right .b-r-top .b-r-t-b .b-r-t-b-right {
+  margin-top: 5px;
+  height: 30px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v2 .block-right .b-r-bottom {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  overflow: hidden;
+  gap: 5px;
+}
+.wired-blocks-design-v2 .block-right .b-r-bottom .b-r-b-left {
+  height: 40px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v2 .block-right .b-r-bottom .b-r-b-right .b-r-b-r-top {
+  height: 20px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v2 .block-right .b-r-bottom .b-r-b-right .b-r-b-r-bottom {
+  height: 20px;
+  width: 100%;
+  background: red;
+}
+
+.wired-blocks-design-v3 {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  gap: 5px;
+  margin: 2em 0;
+}
+.wired-blocks-design-v3 .block-left {
+  width: 100%;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 45% 55%;
+  gap: 5px;
+}
+.wired-blocks-design-v3 .block-left .b-l-left {
+  width: 100%;
+}
+.wired-blocks-design-v3 .block-left .b-l-left .b-l-l-top {
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v3 .block-left .b-l-left .b-l-l-bottom {
+  width: 100%;
+}
+.wired-blocks-design-v3 .block-left .b-l-left .b-l-l-bottom .b-l-l-b-top {
+  height: 30px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v3 .block-left .b-l-left .b-l-l-bottom .b-l-l-b-bottom {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  overflow: hidden;
+  gap: 5px;
+}
+.wired-blocks-design-v3 .block-left .b-l-left .b-l-l-bottom .b-l-l-b-bottom .b-l-l-b-b-left {
+  height: 45px;
+  width: 100%;
+  background: red;
+  margin-top: 5px;
+}
+.wired-blocks-design-v3 .block-left .b-l-left .b-l-l-bottom .b-l-l-b-bottom .b-l-l-b-b-right {
+  width: 100%;
+  height: 45px;
+  background: red;
+  margin-top: 5px;
+}
+.wired-blocks-design-v3 .block-left .b-l-right .b-l-r-top .b-l-r-t-top {
+  height: 25px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v3 .block-left .b-l-right .b-l-r-top .b-l-r-t-bottom {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 5px;
+}
+.wired-blocks-design-v3 .block-left .b-l-right .b-l-r-top .b-l-r-t-bottom .b-l-r-t-b-left {
+  margin-top: 5px;
+  height: 10px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v3 .block-left .b-l-right .b-l-r-top .b-l-r-t-bottom .b-l-r-t-b-right {
+  margin-top: 5px;
+  height: 10px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v3 .block-left .b-l-right .b-l-r-bottom .b-l-r-b1 {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.wired-blocks-design-v3 .block-left .b-l-right .b-l-r-bottom .b-l-r-b1 .b-l-r-b1-top {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.wired-blocks-design-v3 .block-left .b-l-right .b-l-r-bottom .b-l-r-b1 .b-l-r-b1-top .b-l-r-b1-t-left .b-l-r-b1-t-l-top {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  gap: 5px;
+  overflow: hidden;
+}
+.wired-blocks-design-v3 .block-left .b-l-right .b-l-r-bottom .b-l-r-b1 .b-l-r-b1-top .b-l-r-b1-t-left .b-l-r-b1-t-l-top .b-l-r-b1-t-l-t-left {
+  margin-top: 5px;
+  height: 30px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v3 .block-left .b-l-right .b-l-r-bottom .b-l-r-b1 .b-l-r-b1-top .b-l-r-b1-t-left .b-l-r-b1-t-l-top .b-l-r-b1-t-l-t-right {
+  height: 30px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v3 .block-left .b-l-right .b-l-r-bottom .b-l-r-b1 .b-l-r-b1-top .b-l-r-b1-t-left .b-l-r-b1-t-l-bottom {
+  width: 100%;
+  height: 20px;
+  background: red;
+}
+.wired-blocks-design-v3 .block-left .b-l-right .b-l-r-bottom .b-l-r-b1 .b-l-r-b1-top .b-l-r-b1-t-right {
+  margin-top: 5px;
+  height: 50px;
+  width: 100%;
+}
+.wired-blocks-design-v3 .block-left .b-l-right .b-l-r-bottom .b-l-r-b1 .b-l-r-b1-top .b-l-r-b1-t-right .b-l-r-b1-t-r-top {
+  height: 25px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v3 .block-left .b-l-right .b-l-r-bottom .b-l-r-b1 .b-l-r-b1-top .b-l-r-b1-t-right .b-l-r-b1-t-r-bottom {
+  margin-top: 5px;
+  height: 20px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v3 .block-left .b-l-right .b-l-r-bottom .b-l-r-b2 {
+  height: 15px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v3 .block-right .b-r-top {
+  height: 70px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.wired-blocks-design-v3 .block-right .b-r-top .b-r-t-t {
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v3 .block-right .b-r-top .b-r-t-b {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 5px;
+  overflow: hidden;
+}
+.wired-blocks-design-v3 .block-right .b-r-top .b-r-t-b .b-r-t-b-left {
+  height: 35px;
+  background: red;
+  width: 100%;
+  background: red;
+  border: 1px solid red;
+}
+.wired-blocks-design-v3 .block-right .b-r-top .b-r-t-b .b-r-t-b-right {
+  margin-top: 5px;
+  height: 30px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v3 .block-right .b-r-bottom {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  overflow: hidden;
+  gap: 5px;
+}
+.wired-blocks-design-v3 .block-right .b-r-bottom .b-r-b-left {
+  height: 40px;
+  width: 100%;
+}
+.wired-blocks-design-v3 .block-right .b-r-bottom .b-r-b-left .b-r-b-l-top {
+  height: 15px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v3 .block-right .b-r-bottom .b-r-b-left .b-r-b-l-bottom {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+  gap: 5px;
+}
+.wired-blocks-design-v3 .block-right .b-r-bottom .b-r-b-left .b-r-b-l-bottom .b-r-b-l-b-left {
+  height: 25px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v3 .block-right .b-r-bottom .b-r-b-left .b-r-b-l-bottom .b-r-b-l-b-right {
+  margin-top: 5px;
+  height: 20px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v3 .block-right .b-r-bottom .b-r-b-right .b-r-b-r-top {
+  height: 20px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design-v3 .block-right .b-r-bottom .b-r-b-right .b-r-b-r-bottom {
+  height: 20px;
+  width: 100%;
+  background: red;
+}
+
+.wired-blocks-design4 {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  gap: 5px;
+  margin: 2em 0;
+}
+.wired-blocks-design4 .block-left {
+  width: 100%;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 45% 55%;
+  gap: 5px;
+}
+.wired-blocks-design4 .block-left .b-l-left {
+  width: 100%;
+}
+.wired-blocks-design4 .block-left .b-l-left .b-l-l-top {
+  height: 30px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design4 .block-left .b-l-left .b-l-l-bottom {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+  gap: 5px;
+}
+.wired-blocks-design4 .block-left .b-l-left .b-l-l-bottom .b-l-l-b-left, .wired-blocks-design4 .block-left .b-l-left .b-l-l-bottom .b-l-l-b-right {
+  width: 100%;
+  height: 80px;
+  background: red;
+}
+.wired-blocks-design4 .block-left .b-l-right .b-l-r-top {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-bottom: 5px;
+  gap: 5px;
+}
+.wired-blocks-design4 .block-left .b-l-right .b-l-r-top .b-l-r-t-left, .wired-blocks-design4 .block-left .b-l-right .b-l-r-top .b-l-r-t-right {
+  height: 30px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design4 .block-left .b-l-right .b-l-r-bottom .b-l-r-b1 {
+  height: 60px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design4 .block-left .b-l-right .b-l-r-bottom .b-l-r-b2 {
+  height: 15px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design4 .block-right .b-r-top {
+  height: 70px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design4 .block-right .b-r-bottom {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  overflow: hidden;
+  gap: 5px;
+}
+.wired-blocks-design4 .block-right .b-r-bottom .b-r-b-left {
+  height: 40px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design4 .block-right .b-r-bottom .b-r-b-right .b-r-b-r-top {
+  height: 20px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design4 .block-right .b-r-bottom .b-r-b-right .b-r-b-r-bottom {
+  height: 15px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design4 .circle-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wired-blocks-design4 .circle-container .circle {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  margin-right: 0.3em;
+}
+.wired-blocks-design4 .b-l-l-b-left {
+  position: relative;
+}
+.wired-blocks-design4 .floating-object {
+  height: 30px;
+  width: 60%;
+  position: absolute;
+  background: white;
+  right: 21%;
+  top: 30%;
+}
+
+.wired-blocks-design2-v1 {
+  margin: 4em 0;
+}
+.wired-blocks-design2-v1 .block-top {
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 50% 20% 20% 10%;
+  overflow: hidden;
+  gap: 5px;
+}
+.wired-blocks-design2-v1 .block-top div {
+  width: 100%;
+  height: 30px;
+  background: red;
+}
+.wired-blocks-design2-v1 .block-bottom {
+  display: grid;
+  grid-template-columns: 20% 25% 45% 10%;
+  gap: 5px;
+  overflow: hidden;
+}
+.wired-blocks-design2-v1 .block-bottom .b-b1, .wired-blocks-design2-v1 .block-bottom .b-b4 {
+  height: 100px;
+  background: red;
+}
+.wired-blocks-design2-v1 .block-bottom .b-b2 div {
+  height: 47.5px;
+  background: red;
+}
+.wired-blocks-design2-v1 .block-bottom .b-b2 .b-b2-top {
+  margin-bottom: 5px;
+}
+.wired-blocks-design2-v1 .block-bottom .b-b3 .b-b3-top {
+  height: 47px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design2-v1 .block-bottom .b-b3 .b-b3-bottom {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 5px;
+  overflow: hidden;
+}
+.wired-blocks-design2-v1 .block-bottom .b-b3 .b-b3-bottom .b-b3-b-left {
+  background: red;
+  height: 53px;
+}
+.wired-blocks-design2-v1 .block-bottom .b-b3 .b-b3-bottom .b-b3-b-right {
+  background: red;
+  height: 48px;
+  margin-top: 5px;
+}
+
+.wired-blocks-design2-v2 {
+  margin: 4em 0;
+}
+.wired-blocks-design2-v2 .block-top {
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 50% 20% 20% 10%;
+  overflow: hidden;
+  gap: 5px;
+}
+.wired-blocks-design2-v2 .block-top div {
+  width: 100%;
+  height: 30px;
+  background: red;
+}
+.wired-blocks-design2-v2 .block-bottom {
+  display: grid;
+  grid-template-columns: 20% 25% 45% 10%;
+  overflow: hidden;
+}
+.wired-blocks-design2-v2 .block-bottom div {
+  height: 100px;
+}
+.wired-blocks-design2-v2 .block-bottom .b-b1 .b-b1-top {
+  height: 50px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design2-v2 .block-bottom .b-b1 .b-b1-bottom {
+  height: 45px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design2-v2 .block-bottom .b-b2 .b-b2-top {
+  margin-left: 5px;
+  height: 45px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design2-v2 .block-bottom .b-b2 .b-b2-bottom {
+  height: 45px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design2-v2 .block-bottom .b-b3 .b-b3-top {
+  height: 45px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design2-v2 .block-bottom .b-b3 .b-b3-bottom {
+  height: 45px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design2-v2 .block-bottom .b-b4 .b-b4-top {
+  height: 45px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design2-v2 .block-bottom .b-b4 .b-b4-bottom {
+  height: 45px;
+  width: 100%;
+  background: red;
+}
+
+.wired-blocks-design2-v3 {
+  margin: 4em 0;
+}
+.wired-blocks-design2-v3 .block-top {
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 50% 20% 20% 10%;
+  overflow: hidden;
+  gap: 5px;
+}
+.wired-blocks-design2-v3 .block-top div {
+  width: 100%;
+  height: 30px;
+  background: red;
+}
+.wired-blocks-design2-v3 .block-bottom {
+  display: grid;
+  grid-template-columns: 20% 25% 45% 10%;
+  overflow: hidden;
+}
+.wired-blocks-design2-v3 .block-bottom div {
+  height: 100px;
+}
+.wired-blocks-design2-v3 .block-bottom .b-b1 .b-b1-top {
+  height: 45px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design2-v3 .block-bottom .b-b1 .b-b1-bottom {
+  height: 45px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design2-v3 .block-bottom .b-b2 .b-b2-top {
+  margin-left: 5px;
+  height: 45px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design2-v3 .block-bottom .b-b2 .b-b2-bottom {
+  height: 45px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design2-v3 .block-bottom .b-b3 .b-b3-top {
+  height: 45px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design2-v3 .block-bottom .b-b3 .b-b3-bottom {
+  height: 45px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design2-v3 .block-bottom .b-b4 .b-b4-top {
+  height: 45px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design2-v3 .block-bottom .b-b4 .b-b4-bottom {
+  height: 45px;
+  width: 100%;
+  background: red;
+}
+
+.wired-blocks-design2-v4 {
+  margin: 4em 0;
+}
+.wired-blocks-design2-v4 .block-top {
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 50% 20% 20% 10%;
+  overflow: hidden;
+}
+.wired-blocks-design2-v4 .block-top div {
+  width: 100%;
+  height: 30px;
+  background: red;
+}
+.wired-blocks-design2-v4 .block-top .b-t4 {
+  margin-left: 5px;
+}
+.wired-blocks-design2-v4 .block-bottom {
+  display: grid;
+  grid-template-columns: 20% 25% 45% 10%;
+  overflow: hidden;
+}
+.wired-blocks-design2-v4 .block-bottom div {
+  height: 100px;
+}
+.wired-blocks-design2-v4 .block-bottom .b-b1 .b-b1-top {
+  height: 45px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design2-v4 .block-bottom .b-b1 .b-b1-bottom {
+  height: 45px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design2-v4 .block-bottom .b-b2 .b-b2-top {
+  height: 45px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design2-v4 .block-bottom .b-b2 .b-b2-bottom {
+  margin-left: 5px;
+  height: 45px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design2-v4 .block-bottom .b-b3 .b-b3-top {
+  height: 45px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design2-v4 .block-bottom .b-b3 .b-b3-bottom {
+  height: 45px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design2-v4 .block-bottom .b-b4 .b-b4-top {
+  height: 45px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design2-v4 .block-bottom .b-b4 .b-b4-bottom {
+  height: 45px;
+  width: 100%;
+  background: red;
+}
+
+.wired-blocks-design3-v1 {
+  margin: 4em 0;
+}
+.wired-blocks-design3-v1 .block-top {
+  height: 65px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design3-v1 .block-bottom {
+  display: grid;
+  grid-template-columns: 10% 60% 30%;
+  gap: 5px;
+  overflow: hidden;
+}
+.wired-blocks-design3-v1 .block-bottom .b-b1 {
+  height: 75px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design3-v1 .block-bottom .b-b2 .b-b2-top {
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design3-v1 .block-bottom .b-b2 .b-b2-bottom {
+  height: 40px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design3-v1 .block-bottom .b-b3 .b-b3-top {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 5px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.wired-blocks-design3-v1 .block-bottom .b-b3 .b-b3-top div {
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design3-v1 .block-bottom .b-b3 .b-b3-bottom {
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+
+.wired-blocks-design3-v2 {
+  margin: 4em 0;
+}
+.wired-blocks-design3-v2 .block-top {
+  height: 65px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design3-v2 .block-bottom {
+  display: grid;
+  grid-template-columns: 10% 60% 30%;
+  gap: 5px;
+  overflow: hidden;
+}
+.wired-blocks-design3-v2 .block-bottom .b-b1 {
+  height: 75px;
+  width: 100%;
+}
+.wired-blocks-design3-v2 .block-bottom .b-b1 .b-b1-top {
+  height: 35px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design3-v2 .block-bottom .b-b1 .b-b1-bottom {
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design3-v2 .block-bottom .b-b2 .b-b2-top {
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design3-v2 .block-bottom .b-b2 .b-b2-bottom {
+  margin-top: 5px;
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design3-v2 .block-bottom .b-b3 .b-b3-top {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.wired-blocks-design3-v2 .block-bottom .b-b3 .b-b3-top div {
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design3-v2 .block-bottom .b-b3 .b-b3-bottom {
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+
+.wired-blocks-design3-v3 {
+  margin: 4em 0;
+}
+.wired-blocks-design3-v3 .block-top {
+  height: 65px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.wired-blocks-design3-v3 .block-top .b-t-top {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 5px;
+}
+.wired-blocks-design3-v3 .block-top .b-t-top .b-t-t-left {
+  height: 30px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design3-v3 .block-top .b-t-top .b-t-t-right {
+  height: 25px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design3-v3 .block-top .b-t-bottom {
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design3-v3 .block-bottom {
+  display: grid;
+  grid-template-columns: 10% 60% 30%;
+  overflow: hidden;
+}
+.wired-blocks-design3-v3 .block-bottom .b-b1 {
+  height: 75px;
+  width: 100%;
+}
+.wired-blocks-design3-v3 .block-bottom .b-b1 .b-b1-top {
+  height: 35px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design3-v3 .block-bottom .b-b1 .b-b1-bottom {
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design3-v3 .block-bottom .b-b2 .b-b2-top {
+  height: 35px;
+  width: 100%;
+  background: red;
+  margin-left: 5px;
+}
+.wired-blocks-design3-v3 .block-bottom .b-b2 .b-b2-bottom {
+  margin-top: 5px;
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design3-v3 .block-bottom .b-b3 .b-b3-top {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.wired-blocks-design3-v3 .block-bottom .b-b3 .b-b3-top div {
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design3-v3 .block-bottom .b-b3 .b-b3-bottom {
+  margin-left: 5px;
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+
+.wired-blocks-designs-normal {
+  margin: 5em 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  gap: 5px;
+  overflow: hidden;
+}
+.wired-blocks-designs-normal .b1 div {
+  height: 40px;
+  background: red;
+}
+.wired-blocks-designs-normal .b2 {
+  height: 85px;
+  background: red;
+}
+.wired-blocks-designs-normal .b3 div {
+  height: 40px;
+  background: red;
+}
+
+.wired-blocks-designs-normal2 {
+  margin: 5em 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  gap: 5px;
+  overflow: hidden;
+}
+.wired-blocks-designs-normal2 .b1 div {
+  height: 30px;
+  background: red;
+}
+.wired-blocks-designs-normal2 .b2 {
+  height: 85px;
+}
+.wired-blocks-designs-normal2 .b2 .b2-top {
+  height: 57.5px;
+  background: red;
+  width: 100%;
+}
+.wired-blocks-designs-normal2 .b2 .b2-bottom {
+  height: 37.5px;
+  background: red;
+  width: 100%;
+}
+.wired-blocks-designs-normal2 .b3 {
+  height: 100px;
+  background: red;
+}
+
+.wired-blocks-designs-normal3 {
+  margin: 5em 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  gap: 5px;
+  overflow: hidden;
+}
+.wired-blocks-designs-normal3 .b1 {
+  height: 80px;
+  background: red;
+  width: 100%;
+}
+.wired-blocks-designs-normal3 .b2 {
+  height: 85px;
+}
+.wired-blocks-designs-normal3 .b2 .b2-top {
+  height: 25px;
+  background: red;
+  width: 100%;
+}
+.wired-blocks-designs-normal3 .b2 .b2-bottom {
+  height: 20px;
+  background: red;
+  width: 100%;
+}
+.wired-blocks-designs-normal3 .b2 .b2-bottom1 {
+  background: red;
+  width: 100%;
+  height: 25px;
+}
+.wired-blocks-designs-normal3 .b3 {
+  height: 80px;
+  background: red;
+}
+
+.wired-blocks-designs-normal4 {
+  margin: 4em 0;
+}
+.wired-blocks-designs-normal4 div {
+  width: 100%;
+}
+.wired-blocks-designs-normal4 .b1 {
+  background: red;
+  height: 15px;
+  margin-bottom: 5px;
+}
+.wired-blocks-designs-normal4 .b2 {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  gap: 5px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.wired-blocks-designs-normal4 .b2 .b2-left {
+  background: red;
+  height: 30px;
+  width: 100%;
+}
+.wired-blocks-designs-normal4 .b2 .b2-right {
+  background: red;
+  height: 30px;
+  width: 100%;
+}
+.wired-blocks-designs-normal4 .b3 {
+  width: 100%;
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 5px;
+}
+.wired-blocks-designs-normal4 .b3 .b3-left {
+  width: 100%;
+  height: 30px;
+  background: red;
+}
+.wired-blocks-designs-normal4 .b3 .b3-right {
+  width: 100%;
+  height: 30px;
+  background: red;
+}
+.wired-blocks-designs-normal4 .b4 {
+  height: 15px;
+  width: 100%;
+  background: red;
+}
+
+.wired-blocks-designs-normal5 {
+  margin: 4em 0;
+  width: 100%;
+}
+.wired-blocks-designs-normal5 .top {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 20% 70%;
+  gap: 5px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.wired-blocks-designs-normal5 .top div {
+  height: 70px;
+  width: 100%;
+}
+.wired-blocks-designs-normal5 .top .t1 {
+  background: red;
+}
+.wired-blocks-designs-normal5 .top .t2 {
+  background: red;
+}
+.wired-blocks-designs-normal5 .top .t3 {
+  background: red;
+}
+.wired-blocks-designs-normal5 .bottom {
+  display: grid;
+  grid-template-columns: 10% 45% 15% 15% 15%;
+  gap: 5px;
+  overflow: hidden;
+  width: 100%;
+}
+.wired-blocks-designs-normal5 .bottom div {
+  height: 35px;
+  width: 100%;
+}
+.wired-blocks-designs-normal5 .bottom .b1 {
+  background: red;
+}
+.wired-blocks-designs-normal5 .bottom .b2 {
+  background: red;
+}
+.wired-blocks-designs-normal5 .bottom .b3 {
+  background: red;
+}
+.wired-blocks-designs-normal5 .bottom .b4 {
+  background: red;
+}
+.wired-blocks-designs-normal5 .bottom .b5 {
+  background: red;
+}
+
+.wired-blocks-designs-normal6 {
+  width: 100%;
+}
+.wired-blocks-designs-normal6 .top {
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+  gap: 5px;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.wired-blocks-designs-normal6 .top div {
+  height: 15px;
+  width: 100%;
+}
+.wired-blocks-designs-normal6 .top .t1 {
+  background: red;
+}
+.wired-blocks-designs-normal6 .top .t2 {
+  background: red;
+}
+.wired-blocks-designs-normal6 .top .t3 {
+  background: red;
+}
+.wired-blocks-designs-normal6 .middle {
+  display: grid;
+  grid-template-columns: 35% 15% 50%;
+  gap: 5px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.wired-blocks-designs-normal6 .middle div {
+  height: 60px;
+  width: 100%;
+}
+.wired-blocks-designs-normal6 .middle .m1 {
+  background: red;
+}
+.wired-blocks-designs-normal6 .middle .m2 {
+  background: red;
+}
+.wired-blocks-designs-normal6 .middle .m3 {
+  background: red;
+}
+.wired-blocks-designs-normal6 .bottom {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15% 35% 25% 25%;
+  gap: 5px;
+  overflow: hidden;
+}
+.wired-blocks-designs-normal6 .bottom div {
+  width: 100%;
+  height: 10px;
+}
+.wired-blocks-designs-normal6 .bottom .b1 {
+  background: red;
+}
+.wired-blocks-designs-normal6 .bottom .b2 {
+  background: red;
+}
+.wired-blocks-designs-normal6 .bottom .b3 {
+  background: red;
+}
+.wired-blocks-designs-normal6 .bottom .b4 {
+  background: red;
+}
+
+.wired-blocks-design3 {
+  margin: 4em 0;
+}
+.wired-blocks-design3 .block-top {
+  height: 65px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design3 .block-bottom {
+  display: grid;
+  grid-template-columns: 10% 60% 30%;
+  gap: 5px;
+  overflow: hidden;
+}
+.wired-blocks-design3 .block-bottom .b-b1 {
+  height: 75px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design3 .block-bottom .b-b2 .b-b2-top, .wired-blocks-design3 .block-bottom .b-b2 .b-b2-bottom {
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design3 .block-bottom .b-b2 .b-b2-top {
+  margin-bottom: 5px;
+}
+.wired-blocks-design3 .block-bottom .b-b3 .b-b3-top {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 5px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.wired-blocks-design3 .block-bottom .b-b3 .b-b3-top div {
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design3 .block-bottom .b-b3 .b-b3-bottom {
+  height: 35px;
+  width: 100%;
+  background: red;
+}
+
+.wired-blocks-design2 {
+  margin: 4em 0;
+}
+.wired-blocks-design2 .block-top {
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 50% 20% 20% 10%;
+  overflow: hidden;
+  gap: 5px;
+}
+.wired-blocks-design2 .block-top div {
+  width: 100%;
+  height: 30px;
+  background: red;
+}
+.wired-blocks-design2 .block-bottom {
+  display: grid;
+  grid-template-columns: 20% 25% 45% 10%;
+  gap: 5px;
+  overflow: hidden;
+}
+.wired-blocks-design2 .block-bottom div {
+  height: 100px;
+  background: red;
+}
+
+.wired-blocks-design {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  gap: 5px;
+  margin: 2em 0;
+}
+.wired-blocks-design .block-left {
+  width: 100%;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 45% 55%;
+  gap: 5px;
+}
+.wired-blocks-design .block-left .b-l-left {
+  width: 100%;
+}
+.wired-blocks-design .block-left .b-l-left .b-l-l-top {
+  height: 30px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design .block-left .b-l-left .b-l-l-bottom {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+  gap: 5px;
+}
+.wired-blocks-design .block-left .b-l-left .b-l-l-bottom .b-l-l-b-left, .wired-blocks-design .block-left .b-l-left .b-l-l-bottom .b-l-l-b-right {
+  width: 100%;
+  height: 80px;
+  background: red;
+}
+.wired-blocks-design .block-left .b-l-right .b-l-r-top {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-bottom: 5px;
+  gap: 5px;
+}
+.wired-blocks-design .block-left .b-l-right .b-l-r-top .b-l-r-t-left, .wired-blocks-design .block-left .b-l-right .b-l-r-top .b-l-r-t-right {
+  height: 30px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design .block-left .b-l-right .b-l-r-bottom .b-l-r-b1 {
+  height: 60px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design .block-left .b-l-right .b-l-r-bottom .b-l-r-b2 {
+  height: 15px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design .block-right .b-r-top {
+  height: 70px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design .block-right .b-r-bottom {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  overflow: hidden;
+  gap: 5px;
+}
+.wired-blocks-design .block-right .b-r-bottom .b-r-b-left {
+  height: 40px;
+  width: 100%;
+  background: red;
+}
+.wired-blocks-design .block-right .b-r-bottom .b-r-b-right .b-r-b-r-top {
+  height: 20px;
+  width: 100%;
+  background: red;
+  margin-bottom: 5px;
+}
+.wired-blocks-design .block-right .b-r-bottom .b-r-b-right .b-r-b-r-bottom {
+  height: 15px;
+  width: 100%;
+  background: red;
+}/*# sourceMappingURL=wired_box.css.map */

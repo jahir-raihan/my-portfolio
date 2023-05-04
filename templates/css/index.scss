@@ -16,18 +16,18 @@ body{
     background:#f7f7f7;
     overflow-x:hidden;
 }
+.mondrianish .line {
+    border: 4px solid white;
+}
+.mondrianish{
+    opacity: .6;
+}
 :root{
     --border:.5px solid rgba(0, 0, 0, 0.142);
 }
-// profile intro 
-
-// .centerized-content{
-//     width:80%;
-//     margin:auto;
-// }
 
 .profile-intro{
-    margin-top:5%;
+    padding-top:10em;
     display:flex;
     justify-content: center;
     
@@ -36,18 +36,19 @@ body{
         width:1000px;
         margin:auto;
         display: flex;
-        height:500px;
+        
         
 
         .p-i-left{
             margin-right:2em;
-            
+            height:450px;
 
             .p-i-left-container{
                 height:100%;
+                transition-duration: .5s;
             }
             img{
-                border:1px solid rgba(0, 0, 0, 0.415);
+                border:1px solid black;
                 height:100%;
             }
         }
@@ -69,8 +70,9 @@ body{
                 a{
                     display: flex;
                     align-items:center;
-                    text-decoration: none;
-                    color:black;
+                    text-decoration: underline;
+                    color:#52698c;
+                    width:fit-content;
                     margin-bottom: .5em;
                     
                     i{
@@ -82,130 +84,13 @@ body{
                     }
                 }
             }
-        }
-    }
-
-    .bio{
-        width:600px;
-        opacity: .9;
-    }
-}
-
-.wired-blocks-design{
-    
-    display:grid;
-    grid-template-columns: 75% 25%;
-    gap:5px;
-    margin:2em 0;
-    .block-left{
-        
-        width:100%;
-       
-        display:grid;
-        overflow: hidden;
-        grid-template-columns: 45% 55%;
-        gap:5px;
-        .b-l-left{
-            
-            width:100%;
-            .b-l-l-top{
-                height:30px;
-                width:100%;
-                background:red;
-                margin-bottom: 5px;
-            }
-
-            .b-l-l-bottom{
-                display: grid;
-                grid-template-columns: 50% 50%;
-                overflow: hidden;
-                gap:5px;
-                .b-l-l-b-left, .b-l-l-b-right{
-                    width:100%;
-                    height:80px;
-                    background:red;
-                }
-                
-                
-            }
-        }
-
-        .b-l-right{
-            
-            .b-l-r-top{
-                display: grid;
-                grid-template-columns: 40% 60%;
-                margin-bottom:5px;
-                gap:5px;
-
-                .b-l-r-t-left, .b-l-r-t-right{
-                    height:30px;
-                    width:100%;
-                    background:red;
-                }
-               
-            }
-
-            .b-l-r-bottom{
-
-                .b-l-r-b1{
-                    height:60px;
-                    width: 100%;
-                    background:red;
-                    margin-bottom: 5px;
-                }
-
-                .b-l-r-b2{
-                    height:15px;
-                    width:100%;
-                    background:red;
-                }
+            .bio{
+                width:98%;
+                opacity: .9;
             }
         }
     }
 
-    .block-right{
-
-        .b-r-top{
-            height:70px;
-            width:100%;
-            background:red;
-
-            margin-bottom: 5px;
-
-        }
-        .b-r-bottom{
-
-            display: grid;
-            grid-template-columns: 60% 40%;
-            overflow: hidden;
-            gap:5px;
-            .b-r-b-left{
-                height:40px;
-                width:100%;
-                background:red;
-
-            }
-            .b-r-b-right{
-                
-                .b-r-b-r-top{
-                    height:20px;
-                    width:100%;
-                    background:red;
-                    margin-bottom:5px;
-                }
-                .b-r-b-r-bottom{
-                    height:15px;
-                    width:100%;
-                    background:red;
-                }
-            }
-        }
-
-
-
-    }
-    
     
 }
 
@@ -250,37 +135,6 @@ body{
             .project-or-work-details{
                 opacity: .7;
             }
-        }
-    }
-}
-
-.wired-blocks-design2{
-    margin:4em 0;
-    .block-top{
-        margin-bottom: 5px;
-
-        display: grid;
-        grid-template-columns: 50% 20% 20% 10% ;
-        overflow: hidden;
-        gap:5px;
-
-        div{
-            width:100%;
-            height:30px;
-            background:red;
-        }
-    }
-
-    .block-bottom{
-
-        display:grid;
-        grid-template-columns: 20% 25% 45% 10% ;
-        gap:5px;
-        overflow: hidden;
-        
-        div{
-            height:100px;
-            background:red;
         }
     }
 }
@@ -361,67 +215,8 @@ body{
     }
 }
 
-.wired-blocks-design3{
-    margin:4em 0;
-    .block-top{
-        height:65px;
-        width:100%;
-        background:red;
-        margin-bottom: 5px;
-    }
-
-    .block-bottom{
-        display: grid;
-        grid-template-columns: 10% 60% 30%;
-        gap:5px;
-        overflow: hidden;
-
-        .b-b1{
-            height:75px;
-            width:100%;
-            background:red;
-        }
-
-        .b-b2{
-
-            .b-b2-top, .b-b2-bottom{
-                height:35px;
-                width:100%;
-                background:red;
-                
-            }
-            .b-b2-top{
-                margin-bottom: 5px;
-
-            }
-        }
-
-        .b-b3{
-
-            .b-b3-top{
-                display: grid;
-                grid-template-columns: 50% 50%;
-                gap:5px;
-                overflow: hidden;
-                margin-bottom: 5px;
-
-                div{
-                    height:35px;
-                    width:100%;
-                    background:red;
-                }
-            }
-            .b-b3-bottom{
-                height:35px;
-                width:100%;
-                background:red;
-            }
-        }
-    }
-}
-
 .quote{
-    margin:3em 0;
+    margin:3em 0 5em 0;
     .quote-container{
         width: 1000px;
         margin:auto;
@@ -446,997 +241,214 @@ body{
     border-top:var(--border);
     width:100%;
 }
-// Wired block different versions
 
-.wired-blocks-design-v1{
-    
-    display:grid;
-    grid-template-columns: 75% 25%;
-    gap:5px;
-    margin:2em 0;
-    .block-left{
-        
-        width:100%;
-       
-        display:grid;
-        overflow: hidden;
-        grid-template-columns: 45% 55%;
-        gap:5px;
-        .b-l-left{
-            
-            width:100%;
-            .b-l-l-top{
-                height:30px;
-                width:100%;
-                background:red;
-                margin-bottom: 5px;
-            }
+// Media Queries
 
-            .b-l-l-bottom{
-                display: grid;
-                grid-template-columns: 50% 50%;
-                overflow: hidden;
-                gap:5px;
-                .b-l-l-b-left, .b-l-l-b-right{
-                    width:100%;
-                    height:80px;
-                    background:red;
-                }
-                
-                
-            }
-        }
+@media only screen and (max-width:1100px){
 
-        .b-l-right{
-            
-            .b-l-r-top{
-                display: grid;
-                grid-template-columns: 40% 60%;
-                margin-bottom:5px;
-                
-                .b-l-r-t-left, .b-l-r-t-right{
-                    height:30px;
-                    width:100%;
-                    background:red;
-                }
-                
-               
-            }
+    .profile-intro{
 
-            .b-l-r-bottom{
+        .p-i-container{
+            width:800px;
+            margin:auto;
 
-                .b-l-r-b1{
-                    height:60px;
-                    width: 100%;
-                    background:red;
-                    margin-bottom: 5px;
-                }
+            .p-i-left{
 
-                .b-l-r-b2{
-                    height:15px;
-                    width:100%;
-                    background:red;
-                }
-            }
-        }
-    }
-
-    .block-right{
-
-        .b-r-top{
-            height:70px;
-            width:100%;
-            margin-bottom: 5px;
-            
-
-            .b-r-t-t{
-                height:35px;
-                width:100%;
-                background:red;
-            }
-            .b-r-t-b{
-                display: grid;
-                grid-template-columns: 40% 60%;
-                gap:5px;
-                overflow: hidden;
-                
-                .b-r-t-b-left{
-                    height:35px;
-                    background:red;
-                    width:100%;
-                    background:red;
-                    border:1px solid red;
-                    
-                }
-                .b-r-t-b-right{
-                    margin-top:5px;
-                    height: 30px;
-                    width:100%;
-                    background:red;
-                }
-            }
-
-        }
-        .b-r-bottom{
-
-            display: grid;
-            grid-template-columns: 60% 40%;
-            overflow: hidden;
-            gap:5px;
-            .b-r-b-left{
-                height:40px;
-                width:100%;
-                background:red;
-
-            }
-            .b-r-b-right{
-                
-                .b-r-b-r-top{
-                    height:20px;
-                    width:100%;
-                    background:red;
-                    margin-bottom:5px;
-                }
-                .b-r-b-r-bottom{
-                    height:15px;
-                    width:100%;
-                    background:red;
-                }
-            }
-        }
-
-
-
-    }
-    
-    
-}
-
-.wired-blocks-design-v2{
-    
-    display:grid;
-    grid-template-columns: 75% 25%;
-    gap:5px;
-    margin:2em 0;
-    .block-left{
-        
-        width:100%;
-       
-        display:grid;
-        overflow: hidden;
-        grid-template-columns: 45% 55%;
-        gap:5px;
-        .b-l-left{
-            
-            width:100%;
-            .b-l-l-top{
-                height:30px;
-                width:100%;
-                background:red;
-                margin-bottom: 5px;
-            }
-
-            .b-l-l-bottom{
-                width:100%;
-                
-                .b-l-l-b-top{
-                    height:30px;
-                    width:100%;
-                    background:red;
-                }
-
-                .b-l-l-b-bottom{
-                    display: grid;
-                    grid-template-columns: 40% 60%;
-                    overflow:hidden;
-                    gap:5px;
-
-                    .b-l-l-b-b-left{
-                        height:50px;
-                        width:100%;
-                        background:red;
-                    }
-
-                    .b-l-l-b-b-right{
-                        width:100%;
-                        height:45px;
-                        background:red;
-                        margin-top:5px;
-                    }
-                }
-                
-                
-            }
-        }
-
-        .b-l-right{
-            
-            .b-l-r-top{
-                display: grid;
-                grid-template-columns: 40% 60%;
-                
-                gap:5px;
-
-                .b-l-r-t-left{
-                    height: 40px;
-                    width:100%;
-                    background:red;
-                }
-                .b-l-r-t-right{
-                    height:40px;
-                    width:100%;
-                    background:red;
-                }
-               
-            }
-
-            .b-l-r-bottom{
-
-                .b-l-r-b1{
-                    
-                    width: 100%;
-                    
-                    margin-bottom: 5px;
-
-                    .b-l-r-b1-top{
-                        display: grid;
-                        grid-template-columns: 40% 60%;
+                .p-i-left-container{
+                    transition-duration: .5s;
+                    height:70%;
+                    img{
+                        transition-duration: .5s;
                         
-                        .b-l-r-b1-t-left{
-                            background:red;
-                            height:55px;
-                            width:100%;
-                        }
-                       
-                        .b-l-r-b1-t-right{
-                            margin-top:5px;
-                            background:red;
-                            height:50px;
-                            width:100%;
-                        }
                     }
                 }
-
-                .b-l-r-b2{
-                    height:15px;
-                    width:100%;
-                    background:red;
-                }
             }
         }
-    }
-
-    .block-right{
-
-        .b-r-top{
-            height:70px;
-            width:100%;
-            margin-bottom: 5px;
-            
-
-            .b-r-t-t{
-                height:35px;
-                width:100%;
-                background:red;
-            }
-            .b-r-t-b{
-                display: grid;
-                grid-template-columns: 40% 60%;
-                gap:5px;
-                overflow: hidden;
-                
-                .b-r-t-b-left{
-                    height:35px;
-                    background:red;
-                    width:100%;
-                    background:red;
-                    border:1px solid red;
-                    
-                }
-                .b-r-t-b-right{
-                    margin-top:5px;
-                    height: 30px;
-                    width:100%;
-                    background:red;
-                }
-            }
-
-        }
-        .b-r-bottom{
-
-            display: grid;
-            grid-template-columns: 60% 40%;
-            overflow: hidden;
-            gap:5px;
-            .b-r-b-left{
-                height:40px;
-                width:100%;
-                background:red;
-
-            }
-            .b-r-b-right{
-                
-                .b-r-b-r-top{
-                    height:20px;
-                    width:100%;
-                    background:red;
-                    
-                }
-                .b-r-b-r-bottom{
-                    height:20px;
-                    width:100%;
-                    background:red;
-                }
-            }
-        }
-
-
-
-    }
-    
-    
-}
-
-.wired-blocks-design-v3{
-    
-    display:grid;
-    grid-template-columns: 75% 25%;
-    gap:5px;
-    margin:2em 0;
-    .block-left{
-        
-        width:100%;
        
-        display:grid;
-        overflow: hidden;
-        grid-template-columns: 45% 55%;
-        gap:5px;
-        .b-l-left{
-            
-            width:100%;
-            .b-l-l-top{
-                height:35px;
-                width:100%;
-                background:red;
-                
-            }
-
-            .b-l-l-bottom{
-                width:100%;
-                
-                .b-l-l-b-top{
-                    height:30px;
-                    width:100%;
-                    background:red;
-                }
-
-                .b-l-l-b-bottom{
-                    display: grid;
-                    grid-template-columns: 40% 60%;
-                    overflow:hidden;
-                    gap:5px;
-
-                    .b-l-l-b-b-left{
-                        height:45px;
-                        width:100%;
-                        background:red;
-                        margin-top:5px;
-                    }
-
-                    .b-l-l-b-b-right{
-                        width:100%;
-                        height:45px;
-                        background:red;
-                        margin-top:5px;
-                    }
-                }
-                
-                
-            }
-        }
-
-        .b-l-right{
-            
-            .b-l-r-top{
-                
-                .b-l-r-t-top{
-                    height:25px;
-                    width:100%;
-                    background:red;
-                }
-                .b-l-r-t-bottom{
-                    
-                    display: grid;
-                    grid-template-columns: 40% 60%;
-                    gap:5px;
-
-                    .b-l-r-t-b-left{
-                        margin-top:5px;
-                        height:10px;
-                        width:100%;
-                        background:red;
-                    }
-                    .b-l-r-t-b-right{
-                        margin-top:5px;
-                        height:10px;
-                        width:100%;
-                        background:red;
-                    }
-                }
-               
-            }
-
-            .b-l-r-bottom{
-
-                .b-l-r-b1{
-                    
-                    width: 100%;
-                    margin-bottom: 5px;
-
-                    .b-l-r-b1-top{
-                        display: grid;
-                        grid-template-columns: 40% 60%;
-                        
-                        .b-l-r-b1-t-left{
-                           
-                           .b-l-r-b1-t-l-top{
-                                display: grid;
-                                width:100%;
-                                grid-template-columns: 50% 50%;
-                                gap:5px;
-                                overflow: hidden;
-
-                                .b-l-r-b1-t-l-t-left{
-                                    margin-top:5px;
-                                    height:30px;
-                                    width:100%;
-                                    background:red;
-                                }
-                                .b-l-r-b1-t-l-t-right{
-                                   
-                                    height:30px;
-                                    width:100%;
-                                    background:red;
-                                }
-
-                           }
-                            .b-l-r-b1-t-l-bottom{
-                                width:100%;
-                                height:20px;
-                                background:red;
-                        
-                            }
-
-
-                        }
-                       
-                        .b-l-r-b1-t-right{
-                            margin-top:5px;
-                            
-                            height:50px;
-                            width:100%;
-
-                            .b-l-r-b1-t-r-top{
-                                height:25px;
-                                width:100%;
-                                background:red;
-                            }
-                            .b-l-r-b1-t-r-bottom{
-                                margin-top:5px;
-                                height:20px;
-                                width:100%;
-                                background:red;
-                            }
-                        }
-                    }
-                }
-
-                .b-l-r-b2{
-                    height:15px;
-                    width:100%;
-                    background:red;
-                }
-            }
-        }
     }
 
-    .block-right{
+    .experience-projects{
 
-        .b-r-top{
-            height:70px;
-            width:100%;
-            margin-bottom: 5px;
-            
-
-            .b-r-t-t{
-                height:35px;
-                width:100%;
-                background:red;
-            }
-            .b-r-t-b{
-                display: grid;
-                grid-template-columns: 40% 60%;
-                gap:5px;
-                overflow: hidden;
-                
-                .b-r-t-b-left{
-                    height:35px;
-                    background:red;
-                    width:100%;
-                    background:red;
-                    border:1px solid red;
-                    
-                }
-                .b-r-t-b-right{
-                    margin-top:5px;
-                    height: 30px;
-                    width:100%;
-                    background:red;
-                }
-            }
-
+        .e-p-container{
+            width:800px;
+            margin:auto;
         }
-        .b-r-bottom{
+        
 
-            display: grid;
-            grid-template-columns: 60% 40%;
-            overflow: hidden;
-            gap:5px;
+        
+    }
 
-            .b-r-b-left{
-                height:40px;
-                width:100%;
-                
+    .side-projects{
 
-                .b-r-b-l-top{
-                    height:15px;
-                    width:100%;
-                    background:red;
-                }
-                .b-r-b-l-bottom{
-                    display: grid;
-                    grid-template-columns: 50% 50%;
-                    overflow: hidden;
-                    gap:5px;
-
-                    .b-r-b-l-b-left{
-                        height:25px;
-                        width:100%;
-                        background:red;
-                    }
-                    .b-r-b-l-b-right{
-                        margin-top:5px;
-                        height:20px;
-                        width:100%;
-                        background:red;
-                    }
-                }
-
-
-            }
-            .b-r-b-right{
-                
-                .b-r-b-r-top{
-                    height:20px;
-                    width:100%;
-                    background:red;
-                    
-                }
-                .b-r-b-r-bottom{
-                    height:20px;
-                    width:100%;
-                    background:red;
-                }
-            }
+        .s-p-container{
+            width:800px;
+            margin:auto;
         }
+        
 
+        
+    }
 
+    .quote{
+
+        .quote-container{
+            width:800px;
+            margin:auto;
+        }
 
     }
-    
-    
 }
 
-.wired-blocks-design4{
-    
-    display:grid;
-    grid-template-columns: 75% 25%;
-    gap:5px;
-    margin:2em 0;
-    .block-left{
-        
-        width:100%;
+@media only screen and (max-width:850px){
+
+    .profile-intro{
+
+        .p-i-container{
+            width:700px;
+            margin:auto;
+
+            .p-i-left{
+
+                .p-i-left-container{
+                    transition-duration: .5s;
+                    height:50%;
+                    img{
+                        transition-duration: .5s;
+                        
+                    }
+                }
+            }
+        }
        
-        display:grid;
-        overflow: hidden;
-        grid-template-columns: 45% 55%;
-        gap:5px;
-        .b-l-left{
-            
-            width:100%;
-            .b-l-l-top{
-                height:30px;
-                width:100%;
-                background:red;
-                margin-bottom: 5px;
-            }
+    }
 
-            .b-l-l-bottom{
-                display: grid;
-                grid-template-columns: 50% 50%;
-                overflow: hidden;
-                gap:5px;
-                .b-l-l-b-left, .b-l-l-b-right{
-                    width:100%;
-                    height:80px;
-                    background:red;
-                }
-                
-                
-            }
+    .experience-projects{
+
+        .e-p-container{
+            width:700px;
+            margin:auto;
         }
+        
 
-        .b-l-right{
-            
-            .b-l-r-top{
-                display: grid;
-                grid-template-columns: 40% 60%;
-                margin-bottom:5px;
-                gap:5px;
+        
+    }
 
-                .b-l-r-t-left, .b-l-r-t-right{
-                    height:30px;
-                    width:100%;
-                    background:red;
-                }
-               
-            }
+    .side-projects{
 
-            .b-l-r-bottom{
-
-                .b-l-r-b1{
-                    height:60px;
-                    width: 100%;
-                    background:red;
-                    margin-bottom: 5px;
-                }
-
-                .b-l-r-b2{
-                    height:15px;
-                    width:100%;
-                    background:red;
-                }
-            }
+        .s-p-container{
+            width:700px;
+            margin:auto;
         }
     }
 
-    .block-right{
+    .also-projects{
+        width:100% !important;
+    }
 
-        .b-r-top{
-            height:70px;
-            width:100%;
-            background:red;
+    .quote{
 
-            margin-bottom: 5px;
-
+        .quote-container{
+            width:700px;
+            margin:auto;
         }
-        .b-r-bottom{
+    }
+}
 
+@media only screen and (max-width:775px){
+
+    .profile-intro{
+        padding-top:2em;
+        .p-i-container{
+            
+            width:90%;
             display: grid;
-            grid-template-columns: 60% 40%;
-            overflow: hidden;
-            gap:5px;
-            .b-r-b-left{
-                height:40px;
-                width:100%;
-                background:red;
+            margin:auto;
+            grid-template-columns: 100% !important;
 
+            .p-i-left{
+                margin-right:0;
+                margin-bottom: 1em;
             }
-            .b-r-b-right{
-                
-                .b-r-b-r-top{
-                    height:20px;
+            .p-i-left-container{
+                height:100% !important;
+                img{
                     width:100%;
-                    background:red;
-                    margin-bottom:5px;
-                }
-                .b-r-b-r-bottom{
-                    height:15px;
-                    width:100%;
-                    background:red;
+                    object-fit: cover;
+                    
                 }
             }
         }
-
-
-
+       
     }
 
-    .circle-container{
-        width:100%;
-        height:100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .circle{
-            width:50px;
-            height:50px;
-            background:white;
-            border-radius: 50%;
-            margin-right:.3em;
-    
-        }
-    }
-    .b-l-l-b-left{
-        position:relative;
-    }
-    
-    .floating-object{
-        height:30px;
-        width:60%;
-        position:absolute;
-        background:white;
-        right:21%;
-        top:30%;
-    }
-    
-    
-}
+    .experience-projects{
 
-// v2
+        .e-p-container{
+            width:90%;
+            margin:auto;
 
-.wired-blocks-design2-v1{
-    margin:4em 0;
-    .block-top{
-        margin-bottom: 5px;
+            .experience-project{
 
-        display: grid;
-        grid-template-columns: 50% 20% 20% 10% ;
-        overflow: hidden;
-        gap:5px;
-
-        div{
-            width:100%;
-            height:30px;
-            background:red;
-        }
-    }
-
-    .block-bottom{
-
-        display:grid;
-        grid-template-columns: 20% 25% 45% 10% ;
-        gap:5px;
-        overflow: hidden;
-        
-        .b-b1, .b-b4{
-            height:100px;
-            background:red;
-        }
-        .b-b2{
-
-            div{
-                height:47.5px;
-                background:red;
-            
-            }
-            .b-b2-top{
-                margin-bottom:5px;
-            }
-        }
-
-        .b-b3{
-            
-            .b-b3-top{
-                height:47px;
-                width:100%;
-                background:red;
-            }
-            .b-b3-bottom{
-                
-                width:100%;
-                display: grid;
-                grid-template-columns: 60% 40%;
-                gap:5px;
-                overflow: hidden;
-
-                .b-b3-b-left{
-                    background:red;
-                    height:53px;
+                .project-or-company-image{
+                    margin-right:1em;
+                    img{
+                        width:60px;
+                    }
                 }
-                .b-b3-b-right{
-                    background:red;
-                    height:48px;
-                    margin-top:5px;
+                .project-or-company-work-details{
+                    a{
+                        font-size:15px;
+                    }
+                    p, .title{
+                        font-size:13px ;
+                    }
                 }
+            }
+        }
+        
+
+        
+    }
+
+    .side-projects{
+
+        .s-p-container{
+            width:90%;
+            margin:auto;
+
+            .highlight-projects{
                 
+                grid-template-columns: 100% !important;
+                a{
+                    font-size:15px !important;
+                }
+                p, .title{
+                    font-size:13px;
+                }
             }
 
-
-
-        }
-
-        
-    }
-}
-
-.wired-blocks-design2-v2{
-    margin:4em 0;
-    .block-top{
-        margin-bottom: 5px;
-
-        display: grid;
-        grid-template-columns: 50% 20% 20% 10% ;
-        overflow: hidden;
-        gap:5px;
-
-        div{
-            width:100%;
-            height:30px;
-            background:red;
-        }
-    }
-
-    .block-bottom{
-
-        display:grid;
-        grid-template-columns: 20% 25% 45% 10% ;
-        
-        overflow: hidden;
-        
-        div{
-            height:100px;
-            
-        }
-
-        .b-b1{
-
-            .b-b1-top{
-                height:50px;
-                width:100%;
-                background:red;
-                
-            }
-            .b-b1-bottom{
-                height:45px;
-                width:100%;
-                background:red;
-            }
-        }
-        .b-b2{
-            
-            .b-b2-top{
-                margin-left:5px;
-                height:45px;
-                width:100%;
-                background:red;
-                margin-bottom: 5px;
-            }
-            .b-b2-bottom{
-                height:45px;
-                width:100%;
-                background:red;
-            }
-        }
-        .b-b3{
-
-            .b-b3-top{
-                height:45px;
-                width:100%;
-                background:red;
-                margin-bottom: 5px;
-            }
-            .b-b3-bottom{
-                height:45px;
-                width:100%;
-                background:red;
-            }
-        }
-        .b-b4{
-
-            .b-b4-top{
-                height:45px;
-                width:100%;
-                background:red;
-                margin-bottom: 5px;
-            }
-            .b-b4-bottom{
-                height:45px;
-                width:100%;
-                background:red;
+            .also-projects{
+                a{
+                    font-size:14px;
+                }
             }
         }
 
     }
-}
 
-.wired-blocks-design2-v3{
-    margin:4em 0;
-    .block-top{
-        margin-bottom: 5px;
-
-        display: grid;
-        grid-template-columns: 50% 20% 20% 10% ;
-        overflow: hidden;
-        gap:5px;
-
-        div{
-            width:100%;
-            height:30px;
-            background:red;
-        }
+    .also-projects{
+        width:100% !important;
     }
 
-    .block-bottom{
+    .quote{
 
-        display:grid;
-        grid-template-columns: 20% 25% 45% 10% ;
-        
-        overflow: hidden;
-        
-        div{
-            height:100px;
-            
-        }
-
-        .b-b1{
-
-            .b-b1-top{
-                height:45px;
-                width:100%;
-                background:red;
-                margin-bottom: 5px;
-                
-            }
-            .b-b1-bottom{
-                height:45px;
-                width:100%;
-                background:red;
-            }
-        }
-        .b-b2{
-            
-            .b-b2-top{
-                margin-left:5px;
-                height:45px;
-                width:100%;
-                background:red;
-                margin-bottom: 5px;
-            }
-            .b-b2-bottom{
-                height:45px;
-                width:100%;
-                background:red;
-            }
-        }
-        .b-b3{
-
-            .b-b3-top{
-                height:45px;
-                width:100%;
-                background:red;
-                margin-bottom: 5px;
-            }
-            .b-b3-bottom{
-                height:45px;
-                width:100%;
-                background:red;
-            }
-        }
-        .b-b4{
-
-            .b-b4-top{
-                height:45px;
-                width:100%;
-                background:red;
-                margin-bottom: 5px;
-            }
-            .b-b4-bottom{
-                height:45px;
-                width:100%;
-                background:red;
-            }
+        .quote-container{
+            width:90%;
+            margin:auto;
         }
 
     }
+
+
+
 }
