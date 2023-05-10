@@ -163,7 +163,7 @@ container.css({
     width: "100%",
     height: "10vh",
     position: "relative",
-    margin: "4em 0" });
+    });
 
 var grid_width = 12;
 var grid_height = parseInt(15*$(window).height()/$(window).width());
