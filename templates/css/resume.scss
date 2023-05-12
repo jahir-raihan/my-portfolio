@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+    button{
+        cursor: pointer;
+    }
+
+    image-rendering: auto;
+    
+}
+body{
+    background:#f7f7f7;
+    overflow-x:hidden;
+    position: relative;
+}
+
+:root{
+    --border:.5px solid rgba(0, 0, 0, 0.142);
+}
+
+// Resume Container
+
+
+.resume-container{
+    transition-duration: .5s;
+    width:80%;
+    margin:auto;
+    
+
+    .back-btn{
+       padding:.5em 1em;
+       border-radius: 4px;
+       background:gray;
+       color:white;
+       width:150px;
+       border:none;
+       margin-bottom: 5em !important;
+
+       &:hover{
+        transition-duration:.3s;
+        background:#619cc2;
+       }
+
+    }
+
+
+    .resume{
+        margin:4em 0;
+        display: grid;
+        grid-template-columns: 20% 79%;
+        gap:1%;
+
+        .navigation{
+            
+            button{
+                display: flex;
+                justify-content: space-between;
+                padding:.5em 1em;
+                width:150px;
+                margin-bottom: .5em;
+                border:none;
+                align-items: center;
+                border-radius: 4px;
+                position:relative;
+                z-index:3;
+
+                p{
+                    position: relative;
+                    z-index:3;
+                }
+            }
+
+            .back-btn{
+                display: block;
+            }
+            .active, button:hover{
+                transition-duration: .2s;
+                background:rgb(104 144 149);
+                color:white;
+                font-weight: 500;
+
+
+
+                .t-l{
+                    display: block !important;
+                    border-top:2px solid rgb(104 144 149);
+                }
+
+            }
+
+            // Tree stucture
+
+            .t-l{
+                position: absolute;
+                width:350px;
+                height:2px;
+                top:49%;
+                right:-350px;
+                border-top:2px solid rgba(62, 62, 62, 0.436);
+                display: none;
+            }
+            
+        }
+
+        .contents{
+            border:2px solid rgb(104 144 149);
+            height:fit-content;
+            min-height: 90vh;
+            position:relative;
+            z-index:3;
+            padding:5%;
+            background:#f7f7f7;
+           
+            
+
+            .full-resume{
+                opacity: .8;
+
+                .contact-and-location{
+                    margin-bottom: 2em;
+                    .loc{
+                        color:rgb(88, 88, 88);
+                        font-weight: 300;
+                    }
+                    .con{
+                        color:#ea2b6a;
+                    }
+                    p{
+                        margin-bottom: .1em;
+                    }
+                }
+
+                .name-and-links{
+                    
+                    display: flex;
+                    align-items: baseline;
+                    padding-bottom: .5em;
+                    border-bottom: 5px solid black;
+                    margin-bottom: 2em;
+
+                    .name{
+                        font-size:26px;
+                        margin-right:.5em;
+                        
+                        font-weight: 500;
+                    }
+                    a{
+                        color:black;
+                        opacity: .8;
+                        margin-right:.5em;
+                        
+                    }
+                }
+
+                .skills{
+                    margin-bottom: 2em;
+                    .title{
+                        font-weight: bold;
+                        font-size:18px;
+                        margin-bottom: 1em;
+                    }
+
+                    .skillset{
+                        word-spacing: 5px;
+                        letter-spacing: 1px;
+                       
+                    }
+                }
+
+                .f-projects{
+
+                    .title{
+                        font-weight: bold;
+                        font-size:18px;
+                        margin-bottom: 1em;
+                    }
+
+                    .project{
+                        
+                        margin-bottom: 2em;
+                        .project-title{
+                           color:#ea2b6a;
+                           font-weight: bold;
+                           word-spacing: 5px;
+                           letter-spacing: 1px;
+                           margin-bottom: .5em;
+
+                           span{
+                                color:rgb(88, 88, 88);
+                                font-weight: 500;
+                                font-size:13px;
+                           }
+                        }
+
+                        .project-span-time, li{
+                            font-size:14px;
+                            font-weight: 300;
+                            word-spacing: 5px;
+                            letter-spacing: 1px;
+                        }
+                        .project-span-time{
+                            margin-bottom: 1em;
+                        }
+
+                        ul{
+                            padding-left:2em;
+
+                            li{
+                                margin-bottom: .3em;
+                            }
+
+                            
+                        }
+                    }
+                    
+                }
+
+                .f-education, .f-achivements{
+                    
+                    .title{
+                        font-weight: bold;
+                        font-size:18px;
+                        margin-bottom: 1em;
+                    }
+
+                    .edu{
+
+                        margin-bottom: 2em;
+                        .institute-name-and-course-name{
+                           color:#ea2b6a;
+                           font-weight: bold;
+                           word-spacing: 5px;
+                           letter-spacing: 1px;
+                           margin-bottom: .5em;
+
+                           span{
+                                color:rgb(88, 88, 88);
+                                font-weight: 500;
+                                font-size:13px;
+                           }
+                        }
+
+                        .edu-span-time, .details{
+                            font-size:14px;
+                            font-weight: 300;
+                            word-spacing: 5px;
+                            letter-spacing: 1px;
+                            
+                        }
+                        .edu-span-time{
+                            margin-bottom: 1em;
+                        }
+                    
+                    }
+                }
+
+                .f-certifications{
+                    margin:2em 0;
+                    
+                    .title{
+                        font-weight: bold;
+                        font-size:18px;
+                        margin-bottom: 1em;
+                    }
+                    .cert{
+                        padding-left:1em;
+                    }
+
+                    
+                } 
+
+                .f-achivements{
+                    
+                    ul{
+                        padding-left:2em;
+                    }
+                
+                    .achivement{
+                        font-weight: 500;
+                        word-spacing: 5px;
+                        letter-spacing: 1px;
+                    }
+                }
+
+            }
+
+            .projects, .education, .achivements, .certifications{
+                display: none;
+            }
+
+            .projects{
+                .title{
+                    font-weight: bold;
+                    font-size:18px;
+                    margin-bottom: 1em;
+                }
+
+                .project{
+                    
+                    margin-bottom: 2em;
+                    .project-title{
+                       color:#ea2b6a;
+                       font-weight: bold;
+                       word-spacing: 5px;
+                       letter-spacing: 1px;
+                       margin-bottom: .5em;
+
+                       span{
+                            color:rgb(88, 88, 88);
+                            font-weight: 500;
+                            font-size:13px;
+                       }
+                    }
+
+                    .project-span-time, li{
+                        font-size:14px;
+                        font-weight: 300;
+                        word-spacing: 5px;
+                        letter-spacing: 1px;
+                    }
+                    .project-span-time{
+                        margin-bottom: 1em;
+                    }
+
+                    ul{
+                        padding-left:2em;
+
+                        li{
+                            margin-bottom: .3em;
+                        }
+
+                        
+                    }
+                }
+            }
+
+            .education, .achivements{
+            
+                .title{
+                    font-weight: bold;
+                    font-size:18px;
+                    margin-bottom: 1em;
+                }
+
+                ul{
+                    padding-left:2em;
+                }
+
+                .edu{
+
+                    margin-bottom: 2em;
+                    .institute-name-and-course-name{
+                       color:#ea2b6a;
+                       font-weight: bold;
+                       word-spacing: 5px;
+                       letter-spacing: 1px;
+                       margin-bottom: .5em;
+
+                       span{
+                            color:rgb(88, 88, 88);
+                            font-weight: 500;
+                            font-size:13px;
+                       }
+                    }
+
+                    .edu-span-time, .details{
+                        font-size:14px;
+                        font-weight: 300;
+                        word-spacing: 5px;
+                        letter-spacing: 1px;
+                        
+                    }
+                    .edu-span-time{
+                        margin-bottom: 1em;
+                    }
+                
+                }
+
+            }
+
+
+
+            .achivements{
+
+                .achivement{
+                    font-weight: bold;
+                    word-spacing: 5px;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .certifications, .f-certifications{
+            
+                .cert{
+                    margin-bottom: 2em;
+
+                    .org-name{
+                        font-weight: 500;
+                        font-size:18px;
+                    }
+                }
+
+                ul{
+                    padding-left:2em;
+
+                    span{
+                        color:gray;
+                        font-size:13px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color:black;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+
+            
+        }
+    }
+}
+
+// We'll update this thing later, when we'll be able to use physics on the whole dom.
+.zero-gravity{
+    margin-top:5em;
+    &:hover{
+    
+        background:#c3c6c7 !important;
+        color:rgb(214, 54, 54) !important;
+       
+    }
+}
+.activate-gravity{
+    background:#c3c6c7 !important;
+    color:rgb(214, 54, 54) !important;
+    font-weight: 500;
+}
+
+.download-resume{
+
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:100px;
+    background:rgb(104 144 149);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:.3em 1em;
+    border-radius: 4px;
+    text-decoration:none;
+    font-size:13px;
+}
+
+
+// Media queries
+
+
+@media only screen and (max-width:1000px){
+
+    .resume-container{
+        transition-duration: .5s;
+        width:95%;
+    }
+}
+@media only screen and (max-width:800px){
+
+    .resume-container{
+    
+        .resume{
+
+            grid-template-columns: 100%;
+
+            .navigation{
+                display: flex;
+                align-items: baseline;
+                flex-wrap:wrap;
+
+                .back-btn{
+                    width:72px;
+                }
+                
+                button{
+                    height:fit-content;
+                    width:fit-content;
+                    margin-bottom: .5em !important;
+                    margin-right:.5em;
+                    
+                }
+                .t-l{
+                    height:350px;
+                    border-left:2px solid rgb(104, 144, 149);
+                    width:1px;
+                    right:50%;
+                    border-top:none !important;
+                }
+                .arrow{
+                    display: none;
+                }
+                .zero-gravity{
+                    position:relative;
+                    background:#f8f2f2;
+                    z-index:3;
+                    margin-top:0 !important;
+                }
+                
+            }
+
+            .projects{
+                margin-top:2.5em;
+            }
+        }
+    }
+}

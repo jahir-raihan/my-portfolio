@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  image-rendering: auto;
+}
+* button {
+  cursor: pointer;
+}
+
+body {
+  background: #f7f7f7;
+  overflow-x: hidden;
+  position: relative;
+}
+
+:root {
+  --border:.5px solid rgba(0, 0, 0, 0.142);
+}
+
+.resume-container {
+  transition-duration: 0.5s;
+  width: 80%;
+  margin: auto;
+}
+.resume-container .back-btn {
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  background: gray;
+  color: white;
+  width: 150px;
+  border: none;
+  margin-bottom: 5em !important;
+}
+.resume-container .back-btn:hover {
+  transition-duration: 0.3s;
+  background: #619cc2;
+}
+.resume-container .resume {
+  margin: 4em 0;
+  display: grid;
+  grid-template-columns: 20% 79%;
+  gap: 1%;
+}
+.resume-container .resume .navigation button {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  width: 150px;
+  margin-bottom: 0.5em;
+  border: none;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+  z-index: 3;
+}
+.resume-container .resume .navigation button p {
+  position: relative;
+  z-index: 3;
+}
+.resume-container .resume .navigation .back-btn {
+  display: block;
+}
+.resume-container .resume .navigation .active, .resume-container .resume .navigation button:hover {
+  transition-duration: 0.2s;
+  background: rgb(104, 144, 149);
+  color: white;
+  font-weight: 500;
+}
+.resume-container .resume .navigation .active .t-l, .resume-container .resume .navigation button:hover .t-l {
+  display: block !important;
+  border-top: 2px solid rgb(104, 144, 149);
+}
+.resume-container .resume .navigation .t-l {
+  position: absolute;
+  width: 350px;
+  height: 2px;
+  top: 49%;
+  right: -350px;
+  border-top: 2px solid rgba(62, 62, 62, 0.436);
+  display: none;
+}
+.resume-container .resume .contents {
+  border: 2px solid rgb(104, 144, 149);
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 90vh;
+  position: relative;
+  z-index: 3;
+  padding: 5%;
+  background: #f7f7f7;
+}
+.resume-container .resume .contents .full-resume {
+  opacity: 0.8;
+}
+.resume-container .resume .contents .full-resume .contact-and-location {
+  margin-bottom: 2em;
+}
+.resume-container .resume .contents .full-resume .contact-and-location .loc {
+  color: rgb(88, 88, 88);
+  font-weight: 300;
+}
+.resume-container .resume .contents .full-resume .contact-and-location .con {
+  color: #ea2b6a;
+}
+.resume-container .resume .contents .full-resume .contact-and-location p {
+  margin-bottom: 0.1em;
+}
+.resume-container .resume .contents .full-resume .name-and-links {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 0.5em;
+  border-bottom: 5px solid black;
+  margin-bottom: 2em;
+}
+.resume-container .resume .contents .full-resume .name-and-links .name {
+  font-size: 26px;
+  margin-right: 0.5em;
+  font-weight: 500;
+}
+.resume-container .resume .contents .full-resume .name-and-links a {
+  color: black;
+  opacity: 0.8;
+  margin-right: 0.5em;
+}
+.resume-container .resume .contents .full-resume .skills {
+  margin-bottom: 2em;
+}
+.resume-container .resume .contents .full-resume .skills .title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+.resume-container .resume .contents .full-resume .skills .skillset {
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+.resume-container .resume .contents .full-resume .f-projects .title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+.resume-container .resume .contents .full-resume .f-projects .project {
+  margin-bottom: 2em;
+}
+.resume-container .resume .contents .full-resume .f-projects .project .project-title {
+  color: #ea2b6a;
+  font-weight: bold;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  margin-bottom: 0.5em;
+}
+.resume-container .resume .contents .full-resume .f-projects .project .project-title span {
+  color: rgb(88, 88, 88);
+  font-weight: 500;
+  font-size: 13px;
+}
+.resume-container .resume .contents .full-resume .f-projects .project .project-span-time, .resume-container .resume .contents .full-resume .f-projects .project li {
+  font-size: 14px;
+  font-weight: 300;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+.resume-container .resume .contents .full-resume .f-projects .project .project-span-time {
+  margin-bottom: 1em;
+}
+.resume-container .resume .contents .full-resume .f-projects .project ul {
+  padding-left: 2em;
+}
+.resume-container .resume .contents .full-resume .f-projects .project ul li {
+  margin-bottom: 0.3em;
+}
+.resume-container .resume .contents .full-resume .f-education .title, .resume-container .resume .contents .full-resume .f-achivements .title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+.resume-container .resume .contents .full-resume .f-education .edu, .resume-container .resume .contents .full-resume .f-achivements .edu {
+  margin-bottom: 2em;
+}
+.resume-container .resume .contents .full-resume .f-education .edu .institute-name-and-course-name, .resume-container .resume .contents .full-resume .f-achivements .edu .institute-name-and-course-name {
+  color: #ea2b6a;
+  font-weight: bold;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  margin-bottom: 0.5em;
+}
+.resume-container .resume .contents .full-resume .f-education .edu .institute-name-and-course-name span, .resume-container .resume .contents .full-resume .f-achivements .edu .institute-name-and-course-name span {
+  color: rgb(88, 88, 88);
+  font-weight: 500;
+  font-size: 13px;
+}
+.resume-container .resume .contents .full-resume .f-education .edu .edu-span-time, .resume-container .resume .contents .full-resume .f-education .edu .details, .resume-container .resume .contents .full-resume .f-achivements .edu .edu-span-time, .resume-container .resume .contents .full-resume .f-achivements .edu .details {
+  font-size: 14px;
+  font-weight: 300;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+.resume-container .resume .contents .full-resume .f-education .edu .edu-span-time, .resume-container .resume .contents .full-resume .f-achivements .edu .edu-span-time {
+  margin-bottom: 1em;
+}
+.resume-container .resume .contents .full-resume .f-certifications {
+  margin: 2em 0;
+}
+.resume-container .resume .contents .full-resume .f-certifications .title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+.resume-container .resume .contents .full-resume .f-certifications .cert {
+  padding-left: 1em;
+}
+.resume-container .resume .contents .full-resume .f-achivements ul {
+  padding-left: 2em;
+}
+.resume-container .resume .contents .full-resume .f-achivements .achivement {
+  font-weight: 500;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+.resume-container .resume .contents .projects, .resume-container .resume .contents .education, .resume-container .resume .contents .achivements, .resume-container .resume .contents .certifications {
+  display: none;
+}
+.resume-container .resume .contents .projects .title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+.resume-container .resume .contents .projects .project {
+  margin-bottom: 2em;
+}
+.resume-container .resume .contents .projects .project .project-title {
+  color: #ea2b6a;
+  font-weight: bold;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  margin-bottom: 0.5em;
+}
+.resume-container .resume .contents .projects .project .project-title span {
+  color: rgb(88, 88, 88);
+  font-weight: 500;
+  font-size: 13px;
+}
+.resume-container .resume .contents .projects .project .project-span-time, .resume-container .resume .contents .projects .project li {
+  font-size: 14px;
+  font-weight: 300;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+.resume-container .resume .contents .projects .project .project-span-time {
+  margin-bottom: 1em;
+}
+.resume-container .resume .contents .projects .project ul {
+  padding-left: 2em;
+}
+.resume-container .resume .contents .projects .project ul li {
+  margin-bottom: 0.3em;
+}
+.resume-container .resume .contents .education .title, .resume-container .resume .contents .achivements .title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+.resume-container .resume .contents .education ul, .resume-container .resume .contents .achivements ul {
+  padding-left: 2em;
+}
+.resume-container .resume .contents .education .edu, .resume-container .resume .contents .achivements .edu {
+  margin-bottom: 2em;
+}
+.resume-container .resume .contents .education .edu .institute-name-and-course-name, .resume-container .resume .contents .achivements .edu .institute-name-and-course-name {
+  color: #ea2b6a;
+  font-weight: bold;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  margin-bottom: 0.5em;
+}
+.resume-container .resume .contents .education .edu .institute-name-and-course-name span, .resume-container .resume .contents .achivements .edu .institute-name-and-course-name span {
+  color: rgb(88, 88, 88);
+  font-weight: 500;
+  font-size: 13px;
+}
+.resume-container .resume .contents .education .edu .edu-span-time, .resume-container .resume .contents .education .edu .details, .resume-container .resume .contents .achivements .edu .edu-span-time, .resume-container .resume .contents .achivements .edu .details {
+  font-size: 14px;
+  font-weight: 300;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+.resume-container .resume .contents .education .edu .edu-span-time, .resume-container .resume .contents .achivements .edu .edu-span-time {
+  margin-bottom: 1em;
+}
+.resume-container .resume .contents .achivements .achivement {
+  font-weight: bold;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+.resume-container .resume .contents .certifications .cert, .resume-container .resume .contents .f-certifications .cert {
+  margin-bottom: 2em;
+}
+.resume-container .resume .contents .certifications .cert .org-name, .resume-container .resume .contents .f-certifications .cert .org-name {
+  font-weight: 500;
+  font-size: 18px;
+}
+.resume-container .resume .contents .certifications ul, .resume-container .resume .contents .f-certifications ul {
+  padding-left: 2em;
+}
+.resume-container .resume .contents .certifications ul span, .resume-container .resume .contents .f-certifications ul span {
+  color: gray;
+  font-size: 13px;
+}
+.resume-container .resume .contents .certifications ul a, .resume-container .resume .contents .f-certifications ul a {
+  text-decoration: none;
+  color: black;
+}
+.resume-container .resume .contents .certifications ul a:hover, .resume-container .resume .contents .f-certifications ul a:hover {
+  text-decoration: underline;
+}
+
+.zero-gravity {
+  margin-top: 5em;
+}
+.zero-gravity:hover {
+  background: #c3c6c7 !important;
+  color: rgb(214, 54, 54) !important;
+}
+
+.activate-gravity {
+  background: #c3c6c7 !important;
+  color: rgb(214, 54, 54) !important;
+  font-weight: 500;
+}
+
+.download-resume {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 100px;
+  background: rgb(104, 144, 149);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3em 1em;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .resume-container {
+    transition-duration: 0.5s;
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .resume-container .resume {
+    grid-template-columns: 100%;
+  }
+  .resume-container .resume .navigation {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .resume-container .resume .navigation .back-btn {
+    width: 72px;
+  }
+  .resume-container .resume .navigation button {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 0.5em !important;
+    margin-right: 0.5em;
+  }
+  .resume-container .resume .navigation .t-l {
+    height: 350px;
+    border-left: 2px solid rgb(104, 144, 149);
+    width: 1px;
+    right: 50%;
+    border-top: none !important;
+  }
+  .resume-container .resume .navigation .arrow {
+    display: none;
+  }
+  .resume-container .resume .navigation .zero-gravity {
+    position: relative;
+    background: #f8f2f2;
+    z-index: 3;
+    margin-top: 0 !important;
+  }
+  .resume-container .resume .projects {
+    margin-top: 2.5em;
+  }
+}/*# sourceMappingURL=resume.css.map */
