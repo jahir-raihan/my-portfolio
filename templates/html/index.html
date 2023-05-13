@@ -8,16 +8,74 @@
     <script src="../js/jquery.js"></script>
     <link rel="stylesheet" href="../css/index.css">
     <title>Jahir Raihan Joy</title>
+
+    <style>
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: monospace;
+            color: #fff;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+
+        #preloader.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        #loading-text {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        #loading-animation {
+            font-size: 30px;
+        }
+
+        #loading-progress {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        #main-container {
+            display: none;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        #main-container.fade-in {
+            display: block;
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
 
+    <div id="preloader">
+        <div id="loading-animation"></div>
+        <div id="loading-text">Loading</div>
+        <div id="loading-progress">0%</div>
+    </div>
+
+    <div id="main-container">
+
     <div class="cartoon-1 cartoonimg">
-        <img src="../img/pngegg (2).png" alt="">
+        <img src="../img/cartoon1.png" alt="">
 
     </div>
 
     <div class="cartoon-2 cartoonimg">
-        <img src="../img/pngegg (4).png" alt="">
+        <img src="../img/cartoon2.png" alt="">
 
     </div>
 
@@ -70,12 +128,10 @@
                     </div>
 
                     <div class="bio">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis labore quo nostrum autem.
-                            Minima debitis veritatis nulla perspiciatis voluptate, enim sequi excepturi nemo optio 
-                            aspernatur voluptatem repellat unde! Sunt necessitatibus corrupti vitae facere. Perferendis,
-                            nostrum. Perspiciatis placeat similique adipisci eos odit non provident rerum? Ut cupiditate 
-                            minus dignissimos consectetur mollitia sapiente asperiores illo aliquid. Quod cumque sequi
-                            culpa ut assumenda fuga quam quidem similique error et ullam fugiat nesciunt officiis omnis,
+                        <p>Web Developer with a demonstrated skill set building Web application using
+                            different technology stack. Skilled in Python, Django, Django-Rest-Framework Html, Css, Javascript, and many more side technologies.
+                            Specialized in BackEnd development using Django. Studying from Compact Polytechnic Institute in Computer Science and
+                            Technology subject.
                     
                             </p>
                     </div>
@@ -310,6 +366,41 @@
            
         </div>
     </div>
+
+    </div>
+
+    <script>
+        window.onload = function() {
+            const loader = document.getElementById('preloader');
+            const content = document.getElementById('main-container');
+            const animation = document.getElementById('loading-animation');
+            const progress = document.getElementById('loading-progress');
+            const animationFrames = ['/', '-', '\\', '|'];
+            let percent = 0;
+            let animationFrameIndex = 0;
+
+            function updateProgress() {
+                percent += 1;
+                if (percent >= 100 || document.readyState === 'complete') {
+                    loader.classList.add('fade-out');
+                    content.classList.add('fade-in');
+                } else {
+                    setTimeout(updateProgress, 20);
+                }
+                
+
+                if (percent < 100 && percent % 5 === 0) {
+                    animation.innerText = animationFrames[animationFrameIndex];
+                    animationFrameIndex = (animationFrameIndex + 1) % animationFrames.length;
+                    progress.innerText = `${percent}%`;
+                }
+
+                                
+            }
+
+            setTimeout(updateProgress, 20);
+        };
+    </script>
     
     <script src="../js/index.js"> </script>
 </body>

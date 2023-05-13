@@ -1,5 +1,9 @@
 // Wired block different versions
 
+div{
+    overflow: hidden;
+}
+
 .wired-blocks-design-v1{
     
     display:grid;
@@ -1383,7 +1387,7 @@
             width:100%;
         }
         .b2-bottom{
-            height:37.5px;
+            height:42.5px;
             background:red;
             width:100%;
         }

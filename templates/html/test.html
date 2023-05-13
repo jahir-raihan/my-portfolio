@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <style>
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-family: monospace;
+      color: #fff;
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
+    }
+
+    #preloader.fade-out {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    #loading-text {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+
+    #loading-animation {
+      font-size: 30px;
+    }
+
+    #loading-progress {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    #content {
+      display: none;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    #content.fade-in {
+      display: block;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div id="preloader">
+    <div id="loading-animation"></div>
+    <div id="loading-text">Loading</div>
+    <div id="loading-progress">0%</div>
+  </div>
+  
+  <div id="content">
+    <!-- your website content here -->
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+    <img src="../img/Matrix-Code-Transparent-Image.png" alt="">
+  </div>
+
+  <script>
+   const loader = document.querySelector('#preloader');
+  const content = document.querySelector('#content');
+  const animation = document.querySelector('#loading-animation');
+  const progress = document.querySelector('#loading-progress');
+  const animationFrames = ['/', '-', '\\', '|'];
+  let animationFrameIndex = 0;
+  let lastRenderTime = 0;
+  let percent = 0;
+
+function updateProgress(currentTime) {
+  const deltaTime = currentTime - lastRenderTime;
+  if (deltaTime > 20 && percent < 100) {
+    percent += Math.floor(deltaTime / 20);
+    percent = Math.min(percent, 100);
+    lastRenderTime = currentTime;
+
+    if (percent % 5 === 0) {
+      animation.innerText = animationFrames[animationFrameIndex];
+      animationFrameIndex = (animationFrameIndex + 1) % animationFrames.length;
+      progress.innerText = `${percent}%`;
+    }
+  }
+
+  if (document.readyState === 'complete') {
+    loader.classList.add('fade-out');
+    content.classList.add('fade-in');
+  } else if (percent < 100) {
+    requestAnimationFrame(updateProgress);
+  }
+}
+
+requestAnimationFrame(updateProgress);
+  </script>
+</body>
+</html>

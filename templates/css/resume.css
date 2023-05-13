@@ -11,7 +11,7 @@
 }
 
 body {
-  background: #f7f7f7;
+  background: #969595;
   overflow-x: hidden;
   position: relative;
 }
@@ -71,7 +71,7 @@ body {
 }
 .resume-container .resume .navigation .active .t-l, .resume-container .resume .navigation button:hover .t-l {
   display: block !important;
-  border-top: 2px solid rgb(104, 144, 149);
+  border-top: 2px solid white;
 }
 .resume-container .resume .navigation .t-l {
   position: absolute;
@@ -83,10 +83,11 @@ body {
   display: none;
 }
 .resume-container .resume .contents {
-  border: 2px solid rgb(104, 144, 149);
+  border: 2px solid white;
   height: -moz-fit-content;
   height: fit-content;
   min-height: 90vh;
+  border-radius: 2px;
   position: relative;
   z-index: 3;
   padding: 5%;
@@ -291,7 +292,7 @@ body {
   margin-bottom: 1em;
 }
 .resume-container .resume .contents .achivements .achivement {
-  font-weight: bold;
+  font-weight: 500;
   word-spacing: 5px;
   letter-spacing: 1px;
 }
@@ -316,6 +317,39 @@ body {
 .resume-container .resume .contents .certifications ul a:hover, .resume-container .resume .contents .f-certifications ul a:hover {
   text-decoration: underline;
 }
+.resume-container .resume .contents .more {
+  margin: 1em 0;
+}
+.resume-container .resume .contents .more .more-project {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 1em 0;
+}
+.resume-container .resume .contents .more ul {
+  padding-left: 2em;
+}
+.resume-container .resume .contents .more ul a {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: black;
+  text-decoration: none;
+}
+.resume-container .resume .contents .more ul a:hover {
+  text-decoration: underline;
+}
+.resume-container .resume .contents .more ul a li {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.navigation-container {
+  position: relative;
+}
+.navigation-container .navigation {
+  position: sticky;
+  top: 4em;
+}
 
 .zero-gravity {
   margin-top: 5em;
@@ -335,7 +369,7 @@ body {
   position: absolute;
   right: 20px;
   top: 20px;
-  width: 100px;
+  width: 150px;
   background: rgb(104, 144, 149);
   color: white;
   display: flex;
@@ -347,6 +381,16 @@ body {
   font-size: 13px;
 }
 
+.extra-design-test {
+  background-image: url("../img/matrix_codes.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0.3;
+  top: 0;
+}
+
 @media only screen and (max-width: 1000px) {
   .resume-container {
     transition-duration: 0.5s;
@@ -355,6 +399,7 @@ body {
 }
 @media only screen and (max-width: 800px) {
   .resume-container .resume {
+    margin-top: 2em;
     grid-template-columns: 100%;
   }
   .resume-container .resume .navigation {
@@ -389,7 +434,7 @@ body {
     z-index: 3;
     margin-top: 0 !important;
   }
-  .resume-container .resume .projects {
+  .resume-container .resume .projects, .resume-container .resume .certifications {
     margin-top: 2.5em;
   }
 }/*# sourceMappingURL=resume.css.map */
