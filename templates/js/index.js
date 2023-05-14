@@ -195,3 +195,10 @@ mondrian.lines.forEach(function(line) {
     container.append(node);
 });        
 });
+
+
+// Message pop up
+
+function toggle_contact(){
+  document.getElementById('msg-box').classList.toggle('show-none')
+}

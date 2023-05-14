@@ -68,6 +68,7 @@
         <div id="loading-progress">0%</div>
     </div>
 
+
     <div id="main-container">
 
     <div class="cartoon-1 cartoonimg">
@@ -81,6 +82,44 @@
     </div>
 
     <div class="tree-line1"></div>
+
+    <div class="msg-pop-up" onclick="toggle_contact()">
+        <i class="fas fa-message"></i>
+    </div>
+
+    <div class="msg-box show-none" id="msg-box" >
+
+        <div class="msg-box-container">
+            <div class="cross-icon" onclick="toggle_contact()">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+            <div class="inp">
+                <label for="name">Email</label>
+                <input type="text" id="email" placeholder="Enter your name . . .">
+            </div>
+            <div class="inp">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Subject . . .">
+            </div>
+            <div class="inp">
+                <label for="subject">Subject</label>
+                <input type="email" id="subject" placeholder="Enter your email . . .">
+            </div>
+            <div class="inp">
+                <label for="message">Message</label>
+                <textarea type="text" id="message" placeholder="Enter text . . ."></textarea>
+            </div>
+
+            <button class="send-button">
+                Send 
+            </button>
+            
+
+            
+        </div>
+        
+    </div>
     
 
     <div class="profile-intro centerized-content">

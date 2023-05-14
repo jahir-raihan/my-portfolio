@@ -374,6 +374,106 @@ body {
   display: none;
 }
 
+.msg-pop-up {
+  position: fixed;
+  bottom: 20px;
+  z-index: 11;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border: var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #52698c;
+  box-shadow: -1px -1px 68px -20px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px -1px 68px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px -1px 68px -20px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+.msg-pop-up i {
+  font-size: 28px;
+  color: white;
+}
+
+.msg-box {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  border: var(--border);
+  background: rgba(0, 0, 0, 0.64);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.msg-box-container {
+  height: 500px;
+  width: 600px;
+  background: white;
+  border-radius: 4px;
+  padding: 1.5em;
+  position: relative;
+}
+
+.show-none {
+  display: none;
+}
+
+.cross-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  background: #52698c;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+.cross-icon i {
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+.msg-box-container .inp {
+  margin: 0.5em 0 1em 0;
+}
+.msg-box-container .inp label, .msg-box-container .inp input {
+  display: block;
+  margin-bottom: 0.5em;
+}
+.msg-box-container .inp label {
+  font-weight: 300;
+  opacity: 0.8;
+}
+.msg-box-container .inp input {
+  height: 40px;
+  width: 100%;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  border: var(--border);
+  outline-color: #52698c;
+}
+.msg-box-container .inp textarea {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 100px;
+  min-height: 100px;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  border: var(--border);
+  outline-color: #52698c;
+  color: #52698c;
+}
+
 @media only screen and (max-width: 1100px) {
   .profile-intro .p-i-container {
     width: 800px;
@@ -444,6 +544,9 @@ body {
   }
   .tree-line1 {
     display: none;
+  }
+  .msg-box-container {
+    width: 90%;
   }
   .profile-intro {
     padding-top: 2em;
