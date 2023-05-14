@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Url shortner</title>
+		
+	 <link rel="stylesheet" href="index.css">
+	</head>
+	
+	<body>
+
+		<div class="container">
+			<div class="input-output">
+				<form id="url_shortner">
+					<div class="input">
+						<input type="url" required id="url" placeholder="paste your link ... ">
+						<button class="paste-btn" onclick="paste()" id="paste">Paste</button>
+						<button id="submit" type="submit" class="short-it">Generate</button>
+					</div>
+				</form>
+				
+				<div class="output" id="output">
+					<a class="link" href="#" id="link">example link</a>
+					<button id="copy" class="copy-btn">Copy</button>
+				</div>
+		
+			</div>
+		</div>
+
+ <script src="index.js">  
+ </script>
+ 
+	</body>
+</html>

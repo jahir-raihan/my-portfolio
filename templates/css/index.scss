@@ -79,7 +79,7 @@ body{
                 font-size:40px;
                 opacity: .8;
                 span{
-                    font-size:28px;
+                    font-size:24px;
                     opacity: .8;
                 }
             }
@@ -136,7 +136,9 @@ body{
         .project-or-company-image{
             margin-right:2em;
             img{
-                width:100px;
+                
+                height:80px;
+                object-fit: contain;
                 border:var(--border);
             }
         }
@@ -186,7 +188,7 @@ body{
             .project-thumbnail{
                 margin-right:2em;
                 img{
-                    width:60px;
+                    width:100px;
                     border:var(--border);
                 }
             }
@@ -198,6 +200,11 @@ body{
                     opacity: .8;
                     display: block;
                     margin-bottom:.3em;
+
+                    span{
+                        font-size:18px;
+                        color:gray;
+                    }
                 }
 
                 .project-details{
@@ -418,7 +425,7 @@ body{
     position: absolute;
     width:80px;
     right: -65px;
-    height: 59%;
+    height: 69%;
     top: 54%;
     border: 2px solid rgba(62, 62, 62, 0.436);
     border-radius: 20px;
@@ -628,7 +635,9 @@ body{
                 .project-or-company-image{
                     margin-right:1em;
                     img{
-                        width:60px;
+                        width:100px;
+                        height:80px;
+                        object-fit: cover;
                     }
                 }
                 
@@ -693,5 +702,45 @@ body{
     }
     .cartoon-2{
         left: 44%;
+    }
+
+
+    .p-i-right-container{
+        .title {
+            p{
+                span{
+                
+                    display: block;
+                }
+            }
+        }
+    }
+
+    
+
+    .experience-projects{
+
+        .e-p-container{
+            .experience-project{
+                display: block;    
+                padding-bottom: 2em;
+                border-bottom: 2px solid rgba(62, 62, 62, 0.436);
+                .project-or-company-image{
+                    margin-right:1em;
+                    img{
+                        width:fit-content;
+                        height:100px !important;
+                        object-fit: cover;
+                        margin-bottom:.5em !important;
+                    }
+                }
+                
+            }
+
+            
+        }
+        
+
+        
     }
 }

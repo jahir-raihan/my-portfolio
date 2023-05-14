@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+    image-rendering: auto;
+    
+}
+button{
+    cursor: pointer;
+}
+body{
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 90%;
+
+
+}
+
+.input-output {
+    width: 60%;
+
+    margin: 20% auto;
+
+}
+
+#url,
+button {
+    display: block;
+    height: 40px;
+    padding: .5em 1em;
+    border-radius: 4px 0 0 4px;
+    outline-color: #40a1ff;
+    border: none;
+    opacity: .8;
+}
+
+#url {
+    border:1px solid rgba(128, 128, 128, 0.533);
+    width: 70%;
+}
+
+.paste-btn,
+.short-it {
+    width: 30%;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    color: white;
+    background: #40a1ff;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+
+}
+
+.short-it {
+    display: none;
+}
+
+.output {
+   
+   
+    margin: 2em auto;
+
+}
+
+#link {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    opacity: .8;
+    font-size: 12px;
+}
+
+#link:hover {
+
+    text-decoration: underline;
+}
+
+.copy-btn {
+    width: fit-content;
+    margin: .5em auto;
+    border-radius: 4px;
+    background: #40a1ff;
+    color: white;
+    height: 30px;
+    font-size: 12px;
+    padding:.5em 2em;
+
+}
+
+@media only screen and (max-width:775px) {
+
+    .input-output {
+
+        width: 90%;
+
+    }
+
+
+}

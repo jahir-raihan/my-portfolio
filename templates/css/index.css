@@ -69,7 +69,7 @@ body {
   opacity: 0.8;
 }
 .profile-intro .p-i-container .p-i-right .title span {
-  font-size: 28px;
+  font-size: 24px;
   opacity: 0.8;
 }
 .profile-intro .p-i-container .p-i-right .links {
@@ -117,7 +117,9 @@ body {
   margin-right: 2em;
 }
 .experience-projects .experience-project .project-or-company-image img {
-  width: 100px;
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
   border: var(--border);
 }
 .experience-projects .experience-project .project-or-company-work-details .link {
@@ -156,7 +158,7 @@ body {
   margin-right: 2em;
 }
 .side-projects .s-p-container .highlight-projects .project-thumbnail img {
-  width: 60px;
+  width: 100px;
   border: var(--border);
 }
 .side-projects .s-p-container .highlight-projects .details .link {
@@ -165,6 +167,10 @@ body {
   opacity: 0.8;
   display: block;
   margin-bottom: 0.3em;
+}
+.side-projects .s-p-container .highlight-projects .details .link span {
+  font-size: 18px;
+  color: gray;
 }
 .side-projects .s-p-container .highlight-projects .details .project-details {
   opacity: 0.7;
@@ -343,7 +349,7 @@ body {
   position: absolute;
   width: 80px;
   right: -65px;
-  height: 59%;
+  height: 69%;
   top: 54%;
   border: 2px solid rgba(62, 62, 62, 0.436);
   border-radius: 20px;
@@ -474,7 +480,10 @@ body {
     margin-right: 1em;
   }
   .experience-projects .e-p-container .experience-project .project-or-company-image img {
-    width: 60px;
+    width: 100px;
+    height: 80px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .side-projects .s-p-container {
     width: 96%;
@@ -509,5 +518,24 @@ body {
   }
   .cartoon-2 {
     left: 44%;
+  }
+  .p-i-right-container .title p span {
+    display: block;
+  }
+  .experience-projects .e-p-container .experience-project {
+    display: block;
+    padding-bottom: 2em;
+    border-bottom: 2px solid rgba(62, 62, 62, 0.436);
+  }
+  .experience-projects .e-p-container .experience-project .project-or-company-image {
+    margin-right: 1em;
+  }
+  .experience-projects .e-p-container .experience-project .project-or-company-image img {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 0.5em !important;
   }
 }/*# sourceMappingURL=index.css.map */
