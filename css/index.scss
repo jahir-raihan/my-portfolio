@@ -341,9 +341,16 @@ e{
 }
 .cartoon-2{
 
-    left:48%;
+    width:100%;
+    display: flex;
+    justify-content: center;
     bottom:-150px;
-    transform:scaleX(-1)
+    transform:scaleX(-1);
+
+    img{
+        height:110px;
+        width:auto;
+    }
 }
 
 .tree-line1{
@@ -439,14 +446,16 @@ e{
 .tree-line6{
     
     position: absolute;
-    width:80px;
-    right: -65px;
-    height: 69%;
-    top: 54%;
-    border: 2px solid rgba(62, 62, 62, 0.436);
+    width:75px;
+    right: -60px;
+    height: 55%;
+    bottom:-66px;
     border:2px solid white;
     border-radius: 20px;
-    border-left:none;
+    border-bottom: none;
+    border-left: none;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .tree-line7{
