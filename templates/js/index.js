@@ -190,7 +190,7 @@ mondrian.lines.forEach(function(line) {
         left: (line[0][0]/grid_width*100)+"%",
         top: (line[0][1]/grid_height*100)+"%",
         width: ((line[1][0]-line[0][0])/grid_width*100)+"%",
-        height: ((line[1][1]-line[0][1])/grid_height*100)+"%"
+        height: ((line[1][1]-line[0][1])/grid_height*100)+"%",
     });
     container.append(node);
 });        
@@ -202,3 +202,62 @@ mondrian.lines.forEach(function(line) {
 function toggle_contact(){
   document.getElementById('msg-box').classList.toggle('show-none')
 }
+
+
+// Matrix Rain Effect - Javascript Academy
+
+const canvas = document.getElementById('Matrix');
+const context = canvas.getContext('2d');
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
+const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const nums = '0123456789';
+
+const alphabet1 = katakana + latin + nums;
+const alphabet = alphabet1 +  '0101010101001010100101001010101001010101001010100101010101001010101001010101001010101001010101001010101001010100101001010100101010101001010100001010100101010010101010010101001'
+
+const fontSize = 16;
+const columns = canvas.width/fontSize;
+
+const rainDrops = [];
+
+for( let x = 0; x < columns; x++ ) {
+	rainDrops[x] = 1;
+}
+
+const draw = () => {
+	context.fillStyle = '#494f5545';
+	context.fillRect(0, 0, canvas.width, canvas.height);
+	
+	context.fillStyle = '#f0e68c4b';
+	context.font = fontSize + 'px monospace';
+  context.globalAlpha = 0.5
+	for(let i = 0; i < rainDrops.length; i++)
+	{
+		const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+		context.fillText(text, i*fontSize, rainDrops[i]*fontSize);
+		context.fillText(text, i*fontSize, rainDrops[i]*fontSize);
+		context.fillText(text, i*fontSize, rainDrops[i]*fontSize);
+		context.fillText(text, i*fontSize, rainDrops[i]*fontSize);
+		
+		if(rainDrops[i]*fontSize > canvas.height && Math.random() > 0.975){
+			rainDrops[i] = 0;
+    }
+		rainDrops[i]++;
+	}
+};
+
+setInterval(draw, 50);
+
+
+window.onresize = () => {
+
+  canvas.width = window.innerWidth
+  canvas.height = window.innerHeight
+}
+
+
+// Test learn it 

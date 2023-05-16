@@ -24,14 +24,17 @@ body{
     padding:1em 0;
     margin:4em 0;
     border:2px solid rgba(62, 62, 62, 0.436);
+    border:2px solid white;
     border-right:none;
     border-left:none;
     position: relative;
+    background:#f7f7f77d;
     
     
 }
 .mondrianish{
-    opacity: .6;
+    opacity: 1;
+    overflow: hidden;
 
 }
 
@@ -67,7 +70,8 @@ body{
                 transition-duration: .5s;
             }
             img{
-                border:1px solid black;
+                border:1px solid white;
+                border-radius: 6px 0 0 6px;
                 height:100%;
                 // border-radius: 6px;
             }
@@ -249,19 +253,26 @@ body{
     }
 }
 
+e{
+    color:#494f5545;
+}
 .quote{
-    margin:3em 0 5em 0;
+    margin:3em 0 11em 0;
     .quote-container{
         width: 1000px;
         margin:auto;
-
+        border:1px solid white;
+        border-radius: 6px;
+        background:white;
         .quote-text{
             margin:1em 0;
             padding:1em;
 
+
             p{
                 font-weight: 300;
                 opacity: .8;
+                color:black;
                 span{
                     font-weight: 500;
                 }
@@ -271,10 +282,7 @@ body{
     }
 
 }
-.line{
-    border-top:var(--border);
-    width:100%;
-}
+
 
 // Cartoon images and wired borders
 
@@ -283,7 +291,7 @@ body{
     z-index:3;
     background:#f7f7f7;
     // padding:20px;
-    border:2px solid rgba(62, 62, 62, 0.436);
+    //border:2px solid rgba(62, 62, 62, 0.436);
     position: relative;
     
 }
@@ -303,6 +311,7 @@ body{
     position:relative;
     z-index:3;
     background:#f7f7f7;
+    border-radius: 6px;
     padding:20px;
 }
 
@@ -312,12 +321,14 @@ body{
 
 .cartoonimg{
     position:absolute;
+   
     
     img{
         width:70px;
-        padding-bottom:.3em;
-        border-bottom: 2px solid rgba(62, 62, 62, 0.436) ;
-        
+        padding:.3em;
+        //border-bottom: 2px solid rgba(62, 62, 62, 0.436) ;
+        background: white;
+        border-radius: 10px;
         
     }
 
@@ -346,7 +357,8 @@ body{
     width:calc(calc(100% / 2)  - 6.689%);
     
    
-    border:2px solid rgba(62, 62, 62, 0.436);
+    // border:2px solid rgba(62, 62, 62, 0.436);
+    border:2px solid white;
     border-bottom: none;
     border-right:none;
 }
@@ -357,6 +369,7 @@ body{
     bottom:-66px;
     right:10%;
     border:2px solid rgba(62, 62, 62, 0.436);
+    border:2px solid white;
     border-top:none;
     border-bottom: none;
     height:66px;
@@ -367,6 +380,7 @@ body{
     position:absolute;
     height:82px;
     border-right:2px solid rgba(62, 62, 62, 0.436);
+    border-right:2px solid white;
     bottom:-82px;
     width:5px;
     right:50%;
@@ -379,6 +393,7 @@ body{
     bottom:-66px;     
     right:-60px;
     border:2px solid rgba(62, 62, 62, 0.436);
+    border:2px solid white;
     z-index:1;
     
     height:55%;
@@ -395,6 +410,7 @@ body{
     height:59%;
     top:-83px;
     border: 2px solid rgba(62, 62, 62, 0.436);
+    border:2px solid white;
     border-top:none;
     border-right:none;
    
@@ -413,7 +429,7 @@ body{
 .m-1-wrapper{
     padding:1em 0;
     position: relative;
-    background:#f7f7f7;
+    background:#f7f7f77d;
     z-index:3;
 
 }
@@ -428,6 +444,7 @@ body{
     height: 69%;
     top: 54%;
     border: 2px solid rgba(62, 62, 62, 0.436);
+    border:2px solid white;
     border-radius: 20px;
     border-left:none;
 }
@@ -437,6 +454,7 @@ body{
     height:66px;
     width:2px;
     border-left:2px solid rgba(62, 62, 62, 0.436);
+    border-left:2px solid white;
     right:50%;
     border-bottom: none;
     border-top:none;
@@ -554,6 +572,17 @@ body{
             color:#52698c;
         }
     }
+}
+// Matrix 
+
+example{
+    color:#f0e68c4b;
+}
+
+#Matrix{
+    position:fixed;
+    top:0;
+    z-index:-1;
 }
 // Media Queries
 
@@ -705,7 +734,7 @@ body{
             display: grid;
             margin:auto;
             grid-template-columns: 100% !important;
-            border-radius: 0;
+            
             border-left:none;
             border-top:none;
             border-right:none;
@@ -719,7 +748,7 @@ body{
             .p-i-left-container{
                 height:100% !important;
                 img{
-                    
+                    border-radius: 6px 6px 0 0;
                     width:100%;
                     
                     
@@ -735,9 +764,8 @@ body{
             width:96%;
             margin:auto;
             border-radius: 0;
-            border-left:none;
-            
-            border-right:none;
+            border:none;
+           
 
             .experience-project{
 
@@ -762,10 +790,8 @@ body{
         .s-p-container{
             width:96%;
             margin:auto;
-            border-radius: 0;
-            border-left:none;
-           
-            border-right:none;
+            border-radius: 0;  
+            border:none;  
             .highlight-projects{
                 
                 grid-template-columns: 100% !important;

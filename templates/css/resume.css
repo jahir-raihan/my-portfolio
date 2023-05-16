@@ -381,16 +381,6 @@ body {
   font-size: 13px;
 }
 
-.extra-design-test {
-  background-image: url("../img/matrix_codes.png");
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  opacity: 0.3;
-  top: 0;
-}
-
 @media only screen and (max-width: 1000px) {
   .resume-container {
     transition-duration: 0.5s;
