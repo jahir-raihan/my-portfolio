@@ -460,12 +460,12 @@
             let animationFrameIndex = 0;
 
             function updateProgress() {
-                percent += 2;
-                if (percent >= 100 || document.readyState === 'complete') {
+                percent += 20;
+                if (percent >= 100) {
                     loader.classList.add('fade-out');
                     content.classList.add('fade-in');
                 } else {
-                    setTimeout(updateProgress, 20);
+                    setTimeout(updateProgress, 10);
                 }
                 
 
