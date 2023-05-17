@@ -432,7 +432,7 @@ e {
 }
 
 .msg-box-container {
-  height: 500px;
+  height: 505px;
   width: 600px;
   background: white;
   border-radius: 4px;
@@ -494,6 +494,14 @@ e {
   border: var(--border);
   outline-color: #52698c;
   color: #52698c;
+}
+.msg-box-container .send-button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: #52698c;
+  color: white;
+  border-radius: 4px;
 }
 
 example {

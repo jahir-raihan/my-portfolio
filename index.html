@@ -3,73 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="./img/favicon1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
     <script src="./js/jquery.js"></script>
     <link rel="stylesheet" href="./css/index.css">
     <title>Jahir Raihan Joy</title>
 
-    <style>
-        #preloader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #000;
-            z-index: 9999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            font-family: monospace;
-            color: #fff;
-            opacity: 1;
-            transition: opacity 1s ease-in-out;
-        }
-
-        #preloader.fade-out {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        #loading-text {
-            margin-top: 20px;
-            font-size: 20px;
-        }
-
-        #loading-animation {
-            font-size: 30px;
-        }
-
-        #loading-progress {
-            margin-top: 10px;
-            font-size: 16px;
-        }
-
-        #main-container {
-            display: none;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-
-        #main-container.fade-in {
-            display: block;
-            opacity: 1;
-        }
-    </style>
+   
 </head>
 <body>
-
-    <div id="preloader">
-        <div id="loading-animation"></div>
-        <div id="loading-text">Loading</div>
-        <div id="loading-progress">0%</div>
-    </div>
-
-
-    <div id="main-container">
 
     <canvas id="Matrix"></canvas>
 
@@ -91,35 +34,37 @@
 
     <div class="msg-box show-none" id="msg-box" >
 
-        <div class="msg-box-container">
-            <div class="cross-icon" onclick="toggle_contact()">
-                <i class="fa fa-times" aria-hidden="true"></i>
+        <form id="contact-form">
+
+            <div class="msg-box-container">
+                <div class="cross-icon" onclick="toggle_contact()">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+
+                <div class="inp">
+                    <label for="name">Email</label>
+                    <input type="email" id="email" required placeholder="Enter your email . . .">
+                </div>
+                <div class="inp">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required placeholder="Enter your name . . .">
+                </div>
+                <div class="inp">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" required placeholder="Subject . . .">
+                </div>
+                <div class="inp">
+                    <label for="message">Message</label>
+                    <textarea type="text" id="message" required placeholder="Enter text . . ."></textarea>
+                </div>
+
+                <button type="submit" class="send-button">
+                    Send <i class="fa fa-solid fa-paper-plane"></i> 
+                </button>
+                
             </div>
 
-            <div class="inp">
-                <label for="name">Email</label>
-                <input type="text" id="email" placeholder="Enter your name . . .">
-            </div>
-            <div class="inp">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Subject . . .">
-            </div>
-            <div class="inp">
-                <label for="subject">Subject</label>
-                <input type="email" id="subject" placeholder="Enter your email . . .">
-            </div>
-            <div class="inp">
-                <label for="message">Message</label>
-                <textarea type="text" id="message" placeholder="Enter text . . ."></textarea>
-            </div>
-
-            <button class="send-button">
-                Send 
-            </button>
-            
-
-            
-        </div>
+        </form>
         
     </div>
     
@@ -152,7 +97,7 @@
                             <p>raihandevbd@gmail.com</p>
                         </a>
 
-                        <a href="#">
+                        <a href="/">
                             <i class="fas fa-user"></i>
                             <p>raihanjoy@raihanjoy.com</p>
                         </a>
@@ -447,40 +392,7 @@
         </div>
     </div>
 
-    </div>
-
-    <script>
-        window.onload = function() {
-            const loader = document.getElementById('preloader');
-            const content = document.getElementById('main-container');
-            const animation = document.getElementById('loading-animation');
-            const progress = document.getElementById('loading-progress');
-            const animationFrames = ['/', '-', '\\', '|'];
-            let percent = 0;
-            let animationFrameIndex = 0;
-
-            function updateProgress() {
-                percent += 2;
-                if (percent >= 100) {
-                    loader.classList.add('fade-out');
-                    content.classList.add('fade-in');
-                } else {
-                    setTimeout(updateProgress, 5);
-                }
-                
-
-                if (percent < 100 && percent % 5 === 0) {
-                    animation.innerText = animationFrames[animationFrameIndex];
-                    animationFrameIndex = (animationFrameIndex + 1) % animationFrames.length;
-                    progress.innerText = `${percent}%`;
-                }
-
-                                
-            }
-
-            setTimeout(updateProgress, 5);
-        };
-    </script>
+    
     
     <script src="./js/index.js"> </script>
 </body>

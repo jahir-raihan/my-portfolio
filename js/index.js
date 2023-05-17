@@ -260,4 +260,28 @@ window.onresize = () => {
 }
 
 
-// Test learn it 
+// Send message using a external BackEnd We'll need jquery for this.
+// We need to build a backEnd for this little message.
+
+$(document).on('submit', '#contact-form', function(e){
+
+  e.preventDefault();
+
+  console.log('Message sent')
+  let req = $.ajax({
+  
+    url: 'backend email handler email path',
+    type:'get',
+    data:{
+      name:$('#name').val(),
+      email:$('#email').val(),
+      subject:$('#subject').val(),
+      message:$('#message').val()
+      
+    }
+  })
+  req.done(function(response){
+  
+    $('#msg-box').html('<p style="text-align:center;">Success!</p>')
+  })
+})
