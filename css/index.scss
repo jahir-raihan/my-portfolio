@@ -741,8 +741,13 @@ example{
         display: none;
     }
 
-    .msg-box-container{
+    #contact-form{
         width:90%;
+        margin:auto;
+    }
+
+    .msg-box-container{
+        width:100% !important;
     }
 
     .profile-intro{
