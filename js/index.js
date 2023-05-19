@@ -260,28 +260,26 @@ window.onresize = () => {
 }
 
 
-// Send message using a external BackEnd We'll need jquery for this.
-// We need to build a backEnd for this little message.
+// Sending email with javascript. Currently we dont have any domain specific email, so we'll just use the dummay one.
 
 $(document).on('submit', '#contact-form', function(e){
 
   e.preventDefault();
-
-  console.log('Message sent')
-  let req = $.ajax({
-  
-    url: 'backend email handler email path',
-    type:'get',
-    data:{
-      name:$('#name').val(),
-      email:$('#email').val(),
-      subject:$('#subject').val(),
-      message:$('#message').val()
-      
-    }
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "raihandevbd@gmail.com",
+    Password: "kmr2303200",
+    To: 'raihandevbd@gmail.com',
+    From: "raihandevbd@gmail.com",
+    Subject: "Sending Email using javascript",
+    Body: "Well that was easy!!",
+   
   })
-  req.done(function(response){
+  .then(function (message) {
+    alert("Mail has been sent successfully")
+  });
   
-    $('#msg-box').html('<p style="text-align:center;">Success!</p>')
-  })
 })
+
+
+
