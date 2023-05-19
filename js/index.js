@@ -268,7 +268,7 @@ $(document).on('submit', '#contact-form', function(e){
   Email.send({
     Host: "smtp.gmail.com",
     Username: "raihandevbd@gmail.com",
-    Password: "kmr2303200",
+    Password: "",
     To: 'raihandevbd@gmail.com',
     From: "raihandevbd@gmail.com",
     Subject: "Sending Email using javascript",
