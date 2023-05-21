@@ -157,46 +157,52 @@ function generate_grid(canvas_size, density) {
 
 var colors = ["#EEE8F0", "#fab1a0", "#7DB7C0", "#932b25", "#498B57", "#333333", "#cf1c8a"];
 // var colors = ["#81ecec", "#74b9ff", "#a29bfe", "#ff7675", "#ffeaa7", "#636e72", "#00b894"];
-$('.mondrianish').each(function() {
-var container = $(this);
-container.css({
-    width: "100%",
-    height: "10vh",
-    position: "relative",
+function run_mondrianish(){
+
+
+  $('.mondrianish').each(function() {
+    var container = $(this);
+    container.css({
+        width: "100%",
+        height: "10vh",
+        position: "relative",
     });
 
-var grid_width = 12;
-var grid_height = parseInt(15*$(window).height()/$(window).width());
-var ngroups = 3;
+    var grid_width = 12;
+    var grid_height = parseInt(15*$(window).height()/$(window).width());
+    var ngroups = 3;
 
-var mondrian = generate_grid([grid_width+1, grid_height+1]);
-mondrian.rectangles.forEach(function(rect) {
-    var node = $("<div class='cell'></div>");
-    node.css({
-        position: 'absolute',
-        left: (rect[0][0]/grid_width*100)+"%",
-        top: (rect[0][1]/grid_height*100)+"%",
-        width: ((rect[1][0]-rect[0][0])/grid_width*100)+"%",
-        height: ((rect[1][1]-rect[0][1])/grid_height*100)+"%",
-        backgroundColor: random_element(colors)
+    var mondrian = generate_grid([grid_width+1, grid_height+1]);
+    mondrian.rectangles.forEach(function(rect) {
+        var node = $("<div class='cell'></div>");
+        node.css({
+            position: 'absolute',
+            left: (rect[0][0]/grid_width*100)+"%",
+            top: (rect[0][1]/grid_height*100)+"%",
+            width: ((rect[1][0]-rect[0][0])/grid_width*100)+"%",
+            height: ((rect[1][1]-rect[0][1])/grid_height*100)+"%",
+            backgroundColor: random_element(colors)
+        });
+        node.addClass("group" + parseInt(Math.random()*ngroups));
+        container.append(node);
     });
-    node.addClass("group" + parseInt(Math.random()*ngroups));
-    container.append(node);
-});
-mondrian.lines.forEach(function(line) {
-    var node = $("<div class='line'></div>");
-    node.css({
-        position: 'absolute',
-        left: (line[0][0]/grid_width*100)+"%",
-        top: (line[0][1]/grid_height*100)+"%",
-        width: ((line[1][0]-line[0][0])/grid_width*100)+"%",
-        height: ((line[1][1]-line[0][1])/grid_height*100)+"%",
-    });
-    container.append(node);
-});        
-});
+    mondrian.lines.forEach(function(line) {
+        var node = $("<div class='line'></div>");
+        node.css({
+            position: 'absolute',
+            left: (line[0][0]/grid_width*100)+"%",
+            top: (line[0][1]/grid_height*100)+"%",
+            width: ((line[1][0]-line[0][0])/grid_width*100)+"%",
+            height: ((line[1][1]-line[0][1])/grid_height*100)+"%",
+        });
+        container.append(node);
+    });        
+  });
 
+}
 
+run_mondrianish()
+setInterval(run_mondrianish, 5000);
 // Message pop up
 
 function toggle_contact(){
@@ -229,7 +235,7 @@ for( let x = 0; x < columns; x++ ) {
 }
 
 const draw = () => {
-	context.fillStyle = '#494f5545';
+	context.fillStyle = '#1f222545';
 	context.fillRect(0, 0, canvas.width, canvas.height);
 	
 	context.fillStyle = '#f0e68c4b';
