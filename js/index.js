@@ -202,7 +202,7 @@ function run_mondrianish(){
 }
 
 run_mondrianish()
-setInterval(run_mondrianish, 5000);
+setInterval(run_mondrianish, 10000);
 // Message pop up
 
 function toggle_contact(){

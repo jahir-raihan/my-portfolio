@@ -121,7 +121,7 @@ body{
 }
 
 .experience-projects{
-    padding-top:1em;
+    
    
     .e-p-container{
         width:1080px;
@@ -131,8 +131,9 @@ body{
         border:2px solid rgba(62, 62, 62, 0.436);
         .section-title{
             font-size:24px;
-            margin-bottom: 2em;
+            margin-bottom: 1.5em;
             font-weight: 500;
+            text-align: center;
         }
     }
 
@@ -189,7 +190,8 @@ body{
         .section-title{
             font-size:24px;
             font-weight: 500;
-            margin-bottom: 2em;
+            margin-bottom: 1.5em;
+            text-align: center;
 
         }
 
@@ -292,9 +294,12 @@ e{
                 font-weight: 300;
                 opacity: .8;
                 color:black;
-                span{
-                    font-weight: 500;
-                }
+               
+            }
+            .qoute-author{
+                font-weight: 500 !important;
+                margin-top:.5em;
+
             }
         }
         
@@ -334,9 +339,6 @@ e{
     padding:15px;
 }
 
-.side-projects{
-    padding-top:1em;
-}
 
 .cartoonimg{
     position:absolute;
@@ -434,7 +436,7 @@ e{
     width:75px;
     left:-60px;
     height:59%;
-    top:-83px;
+    top:-67px;
     border: 2px solid rgba(62, 62, 62, 0.436);
     border:2px solid white;
     border-top:none;
@@ -824,6 +826,7 @@ example{
                 border-bottom: 2px solid rgba(62, 62, 62, 0.436);
                 .project-or-company-image{
                     margin-right:0 !important;
+                    margin-bottom: 1.5em;
                     img{
                         width:100%;
                         height:150px !important;
@@ -919,6 +922,7 @@ example{
                 }
                 .project-thumbnail{
                     margin-right:0em !important;
+                    margin-bottom: 1.5em;
 
                     img{
                         width:100%;
