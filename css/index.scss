@@ -161,6 +161,12 @@ body{
                 font-weight: 500;
                 text-decoration: none;
 
+                i{
+                    padding-left:.3em;
+                    opacity: .6;
+                    font-size:16px;
+                }
+
             }
 
             .title{
@@ -228,6 +234,11 @@ body{
                         font-size:14px;
                         font-weight: 300;
                         color:gray;
+                    }
+                    i{
+                        padding-left:.3em;
+                        opacity: .6;
+                        font-size:16px;
                     }
                 }
 

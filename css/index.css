@@ -136,6 +136,11 @@ body {
   font-weight: 500;
   text-decoration: none;
 }
+.experience-projects .experience-project .project-or-company-work-details .link i {
+  padding-left: 0.3em;
+  opacity: 0.6;
+  font-size: 16px;
+}
 .experience-projects .experience-project .project-or-company-work-details .title {
   font-weight: 400;
   margin-bottom: 1em;
@@ -192,6 +197,11 @@ body {
   font-size: 14px;
   font-weight: 300;
   color: gray;
+}
+.side-projects .s-p-container .highlight-projects .details .link i {
+  padding-left: 0.3em;
+  opacity: 0.6;
+  font-size: 16px;
 }
 .side-projects .s-p-container .highlight-projects .details .project-details {
   font-size: 14px;
