@@ -80,13 +80,24 @@ body{
         .p-i-right{
             padding:15px;
             .title{
-                font-size:40px;
-                opacity: .8;
-                font-weight: 500;
+                
+                h1{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: baseline;
+                    font-size:40px;
+                    opacity: .8;
+                    font-weight: 500;
+                }
+                
+
+
                 span{
                     font-size:20px;
                     opacity: .8;
+                    display: block;
                     font-weight: 400;
+                    padding-left:.5em;
                 }
             }
 

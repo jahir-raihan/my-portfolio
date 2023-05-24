@@ -68,7 +68,10 @@ body {
 .profile-intro .p-i-container .p-i-right {
   padding: 15px;
 }
-.profile-intro .p-i-container .p-i-right .title {
+.profile-intro .p-i-container .p-i-right .title h1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
   font-size: 40px;
   opacity: 0.8;
   font-weight: 500;
@@ -76,7 +79,9 @@ body {
 .profile-intro .p-i-container .p-i-right .title span {
   font-size: 20px;
   opacity: 0.8;
+  display: block;
   font-weight: 400;
+  padding-left: 0.5em;
 }
 .profile-intro .p-i-container .p-i-right .links {
   margin: 1em 0;
