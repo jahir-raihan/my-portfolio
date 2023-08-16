@@ -140,6 +140,11 @@ body {
      object-fit: cover;
   border: var(--border);
 }
+.iframe{
+
+  width:100% !important;
+  height:100% !important;
+}
 .experience-projects .experience-project .project-or-company-work-details .link {
   color: black;
   font-size: 20px;
