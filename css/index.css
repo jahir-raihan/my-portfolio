@@ -138,7 +138,7 @@ body {
   height: 100% !important;
   -o-object-fit: cover;
      object-fit: cover;
-  border: var(--border);
+  
 }
 .iframe{
 
