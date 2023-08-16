@@ -134,8 +134,8 @@ body {
   border: var(--border);
 }
 .experience-projects .experience-project .project-or-company-image iframe {
-  width: 300px;
-  height: 100%;
+  width: 300px !important;
+  height: 100% !important;
   -o-object-fit: cover;
      object-fit: cover;
   border: var(--border);
@@ -564,7 +564,7 @@ example {
     transition-duration: 0.5s;
   }
   .profile-intro .p-i-container .p-i-left .p-i-left-container iframe {
-    transition-duration: 0.5s;
+    transition-duration: 0.5s !important;
   }
   .experience-projects .e-p-container {
     width: 800px;
@@ -686,7 +686,7 @@ example {
     margin-bottom: 0.5em !important;
   }
    .experience-projects .e-p-container .experience-project .project-or-company-image iframe {
-    width: 100%;
+    width: 100% !important;
     height: 150px !important;
     -o-object-fit: cover;
        object-fit: cover;
