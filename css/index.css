@@ -133,6 +133,13 @@ body {
      object-fit: cover;
   border: var(--border);
 }
+.experience-projects .experience-project .project-or-company-image iframe {
+  width: 300px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: var(--border);
+}
 .experience-projects .experience-project .project-or-company-work-details .link {
   color: black;
   font-size: 20px;
@@ -556,6 +563,9 @@ example {
   .profile-intro .p-i-container .p-i-left .p-i-left-container img {
     transition-duration: 0.5s;
   }
+  .profile-intro .p-i-container .p-i-left .p-i-left-container iframe {
+    transition-duration: 0.5s;
+  }
   .experience-projects .e-p-container {
     width: 800px;
     margin: auto;
@@ -675,6 +685,13 @@ example {
        object-fit: cover;
     margin-bottom: 0.5em !important;
   }
+   .experience-projects .e-p-container .experience-project .project-or-company-image iframe {
+    width: 100%;
+    height: 150px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 0.5em !important;
+  }
   .side-projects .s-p-container {
     width: 93%;
     margin: auto;
@@ -724,4 +741,5 @@ example {
     width: 100%;
     height: 150px;
   }
+  
 }/*# sourceMappingURL=index.css.map */
