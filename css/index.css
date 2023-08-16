@@ -133,7 +133,7 @@ body {
      object-fit: cover;
   border: var(--border);
 }
-.experience-projects .experience-project .project-or-company-image iframe {
+.experience-projects .experience-project .project-or-company-image .iframe-container {
   width: 300px !important;
   height: 100% !important;
   -o-object-fit: cover;
@@ -563,7 +563,7 @@ example {
   .profile-intro .p-i-container .p-i-left .p-i-left-container img {
     transition-duration: 0.5s;
   }
-  .profile-intro .p-i-container .p-i-left .p-i-left-container iframe {
+  .profile-intro .p-i-container .p-i-left .p-i-left-container img {
     transition-duration: 0.5s !important;
   }
   .experience-projects .e-p-container {
@@ -685,7 +685,7 @@ example {
        object-fit: cover;
     margin-bottom: 0.5em !important;
   }
-   .experience-projects .e-p-container .experience-project .project-or-company-image iframe {
+   .experience-projects .e-p-container .experience-project .project-or-company-image .iframe-container {
     width: 100% !important;
     height: 150px !important;
     -o-object-fit: cover;
