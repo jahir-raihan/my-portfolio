@@ -3,72 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="../img/favicon1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <link rel="stylesheet" href="../css/resume.css">
-    <script src="../js/resume.js"></script>
+    
+    <link rel="stylesheet" href="./css/resume.css">
+    <script src="./js/resume.js"></script>
     <title>Resume</title>
-    <style>
-        #preloader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #000;
-            z-index: 9999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            font-family: monospace;
-            color: #fff;
-            opacity: 1;
-            transition: opacity 1s ease-in-out;
-        }
-
-        #preloader.fade-out {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        #loading-text {
-            margin-top: 20px;
-            font-size: 20px;
-        }
-
-        #loading-animation {
-            font-size: 30px;
-        }
-
-        #loading-progress {
-            margin-top: 10px;
-            font-size: 16px;
-        }
-
-        #main-container {
-            display: none;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-
-        #main-container.fade-in {
-            display: block;
-            opacity: 1;
-        }
-    </style>
+  
 </head>
 <body>
 
-    <div id="preloader">
-        <div id="loading-animation"></div>
-        <div id="loading-text">Loading</div>
-        <div id="loading-progress">0%</div>
-    </div>
 
-    <div id="main-container">
     <div class="extra-design-test">
     </div>
 
@@ -108,7 +55,7 @@
 
                 <button class="zero-gravity" id="zero-gravity" onclick="zero_gravity()" disabled>
                     <p>Zero Gravity</p>
-                    <i class="fas fa-planet-ringed"></i>
+                    <i class="fa fa-shuttle-space"></i>
                 </button>
 
 
@@ -117,7 +64,7 @@
 
             <div class="contents">
 
-                <a href="../files/Resume.pdf" class="download-resume" download="">Download Resume</a>
+                <a href="./files/Resume.pdf" class="download-resume" download="">Download Resume</a>
 
                 <div class="full-resume tab">
                     
@@ -129,20 +76,36 @@
 
                     <div class="name-and-links">
                         <p class="name">Jahir Raihan Joy</p>
-                        <a href="https://github.com/jahir-raihan" class="link">github</a>
-                        <a href="https://www.linkedin.com/in/jahir-raihan-3b0207204/" target="_blank" class="link">linkedin</a>
+                        <a href="https://github.com/jahir-raihan" class="link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jahir-raihan-3b0207204/" target="_blank" class="link"><i class="fab fa-linkedin"></i></a>
                     </div>
 
                     <div class="skills">
 
                         <p class="title">SKILLS</p>
-                        <p class="skillset"><b>Python</b>, <b>Django</b>, <b>Javascript</b>, Jquery, <b>Html</b>, Css, SQL, <b>Scss</b>, Ajax, <b>Git</b>, Github, <b>Django-Rest-Framework</b>, API</p>
-                        <p><span style="font-weight: 500;">Familiar with</span>: matterjs, cloud services</p>
+                        <p class="skillset"><b>Python</b>, <b>Django</b>, <b>Javascript</b>, <b>Git</b>, Github, <b>Django-Rest-Framework</b>, API, Jquery, <b>Html</b>, Css, SQL, <b>Scss</b>, Ajax</p>
+                        <p><span style="font-weight: bold;">Familiar with</span> : Django-Rest-Framework, SQL, Java, C#, R, RStudio</p>
+                        <p><span style="font-weight:bold">Tools</span> : Figma, Adobe XD, Markdown, Rstudio</p>
                     </div>
 
                     <div class="f-projects">
 
                         <p class="title">PROJECTS</p>
+
+                        <div class="project">
+
+                            <p class="project-title">Web Automation | Whitepages <span>- Web Automation Engineer </span></p>
+    
+                            <p class="project-span-time">Aug 2023 - Aug 2023
+                            </p>
+    
+                            <ul>
+                                <li>Automated data extraction and data removal request on Whitepages.com</li>
+               					<li>Utilized undetected_chromedriver to bypass cloudflare security check.</li>
+                                <li><b>Utilized : Selenium, Undected_Chromedriver, Python </b></li>
+                            
+                            </ul>
+                        </div>
 
                         <div class="project">
 
@@ -152,17 +115,13 @@
                             </p>
     
                             <ul>
-                                <li>Business to Customer "B2C" website especially build for Garments business. </li>
-                                <li>Non users can experience the same features as Logged in Users.</li>
-                                <li>Used LocalStorage to manage Cart functionality.</li>
-                                <li>Lazy redirection enabled, eg: If you click sign in button from Cart Page , you'll be redirected to cart page after Signing in.</li>
-                                <li>Added Social Authenticated, such as <b>"Google"</b> and <b>"Facebook"</b>.</li>
-                                <li><b>SSLCommerze</b> as Payment Gateway.</li>
-                                
-
-                                <li>Multi level  permissions, Admin , Staff, User.</li>
-                                <li>Admin Dashboard with informative <b>Statistics</b>.</li>
+                                <li>Developed an ECommerce “B2C” website to sell and manage garments products. </li>
+                                <li>Utilized LocalStorage as Main/Cache memory to handle cart and other functionality.</li>
+                                <li>Implemented different levels of user permissions and admin dashboard with informative statistics.</li>
+                                <li>Integrated Oauth2 to extend user Login/Registration capability using social authentications.</li>
                                 <li>TDD, used <b>UnitTesting</b>.</li>
+                                <li><b>Utilized : Python,  Django,  Javascript,  Html,  Css, Sass,  Jquery,  Ajax , Oauth API</b></li>
+                            
                             </ul>
                         </div>
 
@@ -174,9 +133,10 @@
                             </p>
 
                             <ul>
-                                <li>An Government project tracker, especially build to track government ongoing Projects, including their details and location. </li>
-                                <li>Used offline dataset of 2022.</li>
-                               
+                                <li>Designed and Implemented a government project tracker to track government ongoing Projects, including their details and location on map.
+                                </li>
+                                <li>Implemented two scraper scripts to scrape Government real time projects data from LGED and   NDRE Website.</li>
+                                <li><b>Utilized : Python,  Django,  Javascript,  Html,  Css,  Sass,  Jquery,  Ajax , Google Maps API, BeautifulSouf4, request api.</b></li>
                             </ul>
                         </div>
 
@@ -187,10 +147,11 @@
                             <p class="project-span-time">June 2022 - September 2022</p>
 
                             <ul>
-                                <li>An E-Ticketing platform, primarily for Buses. </li>
-                                <li>Implemented Freezing System to avoid collision when two or more passengers try to buy the same seat.</li>
-                                <li>Admin Dashboard with a staff management System.</li>
-                                <li>Integrated SSLCommerze as Payment Gateway.</li>
+                                <li>Developed an E-Ticketing platform, primarily for Buses to manage local counter related works.</li>
+                                <li>Implemented freezing system to avoid collision when two or more passengers try to buy the same seat.</li>
+                                <li>Added admin dashboard with a staff management System.</li>
+                                <li><b>Utilized : Python,  Django,  Javascript,  Html,  Css,  Sass,  Jquery,   Ajax,  SPA, SSLCommerz Payment Gateway
+                                </b></li>
                                
                             </ul>
                         </div>
@@ -202,11 +163,13 @@
                             <p class="project-span-time">March 2021 - February 2022</p>
     
                             <ul>
-                                <li>Management system application to manage various activities including Accounting, Result & Student Fees. </li>
-                                <li>Dynamic Result System with live printable Mark sheet.
+                                <li>Designed and Implemented management system application to manage various activities including Accounting, Result & Student Fees.
                                 </li>
-                                <li>Designed, Implemented efficient and readable algorithms.</li>
-                                <li>Multilevel user permissions, eg: Student, Teacher, Accountant, Admin</li>
+                                <li>Added dynamic result system with live printable mark sheet and tabulation sheet feature .
+
+                                </li>
+                                <li>Designed, Implemented efficient and readable algorithms for the result system.</li>
+                                <li><b>Utilized : Python,  Django,  Javascript,  Html,  Css,  Sass,  Jquery,  Ajax , csv utilizer algorithm.</b></li>
                                
                             </ul>
                         </div>
@@ -223,7 +186,7 @@
                             <p class="edu-span-time">August 2019 - Present.</p>
 
                             <p class="details">
-                                Pursued in the Computer Science and Technology Department which includes basics of Software Engineering , Product Development , Algorithms, OOP and Programming Concepts.
+                                Pursued in the Computer Science and Technology Department which includes basics of Software Engineering , Product Development , Algorithms, OOP, Programming Concepts, Information Security, Software testing etc.
                             </p>
 
 
@@ -240,8 +203,8 @@
                             <p class="org-name">Cisco</p>
     
                             <ul>
-                                <a href="../files/JahirRaihan-PCAP - Programmi-certificate.pdf" target="_blank"><li>PCAP – Certified Associate in Python Programming certification <span>- 6 Months</span></li></a>
-                                <a href="../files/NetAcad Learning Transcript.pdf" target="_blank"><li>JavaScript Essentials 1 (JSE) <span>- 3 Months</span></li></a>
+                                <a href="./files/JahirRaihan-PCAP - Programmi-certificate.pdf" target="_blank"><li>PCAP – Certified Associate in Python Programming certification <span>- 6 Months</span></li></a>
+                                <a href="./files/NetAcad Learning Transcript.pdf" target="_blank"><li>JavaScript Essentials 1 (JSE) <span>- 3 Months</span></li></a>
                             </ul>
     
                         </div>
@@ -283,23 +246,34 @@
 
                     <div class="project">
 
+                        <p class="project-title">Web Automation | Whitepages <span>- Web Automation Engineer </span></p>
+    
+                        <p class="project-span-time">Aug 2023 - Aug 2023
+                        </p>
+    
+                        <ul>
+                            <li>Automated data extraction and data removal request on Whitepages.com</li>
+               				<li>Utilized undetected_chromedriver to bypass cloudflare security check.</li>
+                            <li><b>Utilized : Selenium, Undected_Chromedriver, Python </b></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="project">
+
                         <p class="project-title">Ecommerce Web Site <span>- Full Stack</span></p>
 
                         <p class="project-span-time">March 2023 - May 2023
                         </p>
 
                         <ul>
-                            <li>Business to Customer "B2C" website especially build for Garments business. </li>
-                            <li>Non users can experience the same features as Logged in Users.</li>
-                            <li>Used LocalStorage to manage Cart functionality.</li>
-                            <li>Lazy redirection enabled, eg: If you click sign in button from Cart Page , you'll be redirected to cart page after Signing in.</li>
-                            <li>Added Social Authenticated, such as <b>"Google"</b> and <b>"Facebook"</b>.</li>
-                            <li><b>SSLCommerze</b> as Payment Gateway.</li>
-                            
-
-                            <li>Multi level  permissions, Admin , Staff, User.</li>
-                            <li>Admin Dashboard with informative <b>Statistics</b>.</li>
+                            <li>Developed an ECommerce “B2C” website to sell and manage garments products. </li>
+                            <li>Utilized LocalStorage as Main/Cache memory to handle cart and other functionality.</li>
+                            <li>Implemented different levels of user permissions and admin dashboard with informative statistics.</li>
+                            <li>Integrated Oauth2 to extend user Login/Registration capability using social authentications.</li>
                             <li>TDD, used <b>UnitTesting</b>.</li>
+                            <li><b>Utilized : Python,  Django,  Javascript,  Html,  Css, Sass,  Jquery,  Ajax , Oauth API</b></li>
+                        
                         </ul>
                     </div>
 
@@ -311,11 +285,11 @@
                         </p>
 
                         <ul>
-                            <li>An Government project tracker, especially build to track government ongoing Projects, including their details and location. </li>
-                            <li>Used offline dataset of 2022.</li>
-                           
+                            <li>Designed and Implemented a government project tracker to track government ongoing Projects, including their details and location on map.
+                            </li>
+                            <li>Implemented two scraper scripts to scrape Government real time projects data from LGED and   NDRE Website.</li>
+                           <li><b>Utilized : Python,  Django,  Javascript,  Html,  Css,  Sass,  Jquery,  Ajax , Google Maps API, BeautifulSouf4, request api.</b></li>
                         </ul>
-
                     </div>
 
                     <div class="project">
@@ -325,10 +299,11 @@
                         <p class="project-span-time">June 2022 - September 2022</p>
 
                         <ul>
-                            <li>An E-Ticketing platform, primarily for Buses. </li>
-                            <li>Implemented Freezing System to avoid collision when two or more passengers try to buy the same seat.</li>
-                            <li>Admin Dashboard with a staff management System.</li>
-                            <li>Integrated SSLCommerze as Payment Gateway.</li>
+                            <li>Developed an E-Ticketing platform, primarily for Buses to manage local counter related works.</li>
+                            <li>Implemented freezing system to avoid collision when two or more passengers try to buy the same seat.</li>
+                            <li>Added admin dashboard with a staff management System.</li>
+                            <li><b>Utilized : Python,  Django,  Javascript,  Html,  Css,  Sass,  Jquery,   Ajax,  SPA, SSLCommerz Payment Gateway
+                            </b></li>
                            
                         </ul>
                     </div>
@@ -340,11 +315,13 @@
                         <p class="project-span-time">March 2021 - February 2022</p>
 
                         <ul>
-                            <li>Management system application to manage various activities including Accounting, Result & Student Fees. </li>
-                            <li>Dynamic Result System with live printable Mark sheet.
+                            <li>Designed and Implemented management system application to manage various activities including Accounting, Result & Student Fees.
                             </li>
-                            <li>Designed, Implemented efficient and readable algorithms.</li>
-                            <li>Multilevel user permissions, eg: Student, Teacher, Accountant, Admin</li>
+                            <li>Added dynamic result system with live printable mark sheet and tabulation sheet feature .
+
+                            </li>
+                            <li>Designed, Implemented efficient and readable algorithms for the result system.</li>
+                            <li><b>Utilized : Python,  Django,  Javascript,  Html,  Css,  Sass,  Jquery,  Ajax , csv utilizer algorithm.</b></li>
                            
                         </ul>
                     </div>
@@ -355,10 +332,10 @@
                         <ul>
                             <!-- I lost the code of Tic Tac Toe despite having it on github.. :(  -->
                             <!-- <a href="#"><li>Tic Tac Toe (OOP) <span> - Python</span></li></a> -->
-                            <a href="../projects/fighting game/index.html" target="_blank"><li>Simple Fighting Game <span> - Javascript</span></li></a>
+                            <a href="./projects/fighting game/index.html" target="_blank"><li>Simple Fighting Game <span> - Javascript</span></li></a>
                             <a href="wired_blocks.html" target="_blank"><li>Mondarnish Blocks | Wired Blocks Design <span> - Html , Css</span></li></a>
-                            <a href="../projects/target_game/index.html"><li>Simple Target Game <span> - Javascript</span></li></a>
-                            <a href="#"><li>Url Shortner <span> - Django, Html Css & JS</span></li></a>
+                            <a href="./projects/target_game/index.html"><li>Simple Target Game <span> - Javascript</span></li></a>
+                            <a href="https://github.com/jahir-raihan/url-shortner"><li>Url Shortner <span> - Django, Html Css & JS</span></li></a>
                         </ul>
 
                     </div>
@@ -379,7 +356,7 @@
                         <p class="edu-span-time">August 2019 - Present.</p>
 
                         <p class="details">
-                            Pursued in the Computer Science and Technology Department which includes basics of Software Engineering , Product Development , Algorithms, OOP and Programming Concepts.
+                            Pursued in the Computer Science and Technology Department which includes basics of Software Engineering , Product Development , Algorithms, OOP, Programming Concepts, Information Security, Software testing etc.
                         </p>
 
 
@@ -412,8 +389,8 @@
                         <p class="org-name">Cisco</p>
 
                         <ul>
-                            <a href="../files/JahirRaihan-PCAP - Programmi-certificate.pdf" target="_blank"><li>PCAP – Certified Associate in Python Programming certification <span>- 6 Months</span></li></a>
-                            <a href="../files/NetAcad Learning Transcript.pdf" target="_blank"><li>JavaScript Essentials 1 (JSE) <span>- 3 Months</span></li></a>
+                            <a href="./files/JahirRaihan-PCAP - Programmi-certificate.pdf" target="_blank"><li>PCAP – Certified Associate in Python Programming certification <span>- 6 Months</span></li></a>
+                            <a href="./files/NetAcad Learning Transcript.pdf" target="_blank"><li>JavaScript Essentials 1 (JSE) <span>- 3 Months</span></li></a>
                         </ul>
 
                     </div>
@@ -445,39 +422,9 @@
 
 
     </div>
-    </div>
 
-    <script>
-        window.onload = function() {
-            const loader = document.getElementById('preloader');
-            const content = document.getElementById('main-container');
-            const animation = document.getElementById('loading-animation');
-            const progress = document.getElementById('loading-progress');
-            const animationFrames = ['/', '-', '\\', '|'];
-            let percent = 0;
-            let animationFrameIndex = 0;
 
-            function updateProgress() {
-                percent += 1;
-                if (percent >= 100 || document.readyState === 'complete') {
-                    loader.classList.add('fade-out');
-                    content.classList.add('fade-in');
-                } else {
-                    setTimeout(updateProgress, 20);
-                }
-                
-                if (percent < 100 && percent % 5 === 0) {
-                    animation.innerText = animationFrames[animationFrameIndex];
-                    animationFrameIndex = (animationFrameIndex + 1) % animationFrames.length;
-                    progress.innerText = `${percent}%`;
-                }
 
-                                
-            }
-
-            setTimeout(updateProgress, 20);
-        };
-    </script>
 
     
 
