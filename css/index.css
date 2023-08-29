@@ -111,17 +111,26 @@ body {
   width: 1080px;
   border-radius: 6px;
   margin: auto;
-  border: 2px solid rgba(62, 62, 62, 0.436);
 }
 .experience-projects .e-p-container .section-title {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 1.5em;
   font-weight: 500;
   text-align: center;
+  background: white;
+  border-radius: 6px;
+  padding: 0.5em 0;
+  position: relative;
 }
 .experience-projects .experience-project {
   margin-bottom: 2em;
   display: flex;
+  background: white;
+  padding: 15px;
+  z-index: 3;
+  position: relative;
+  border-radius: 6px;
+  min-height: 210px;
 }
 .experience-projects .experience-project .project-or-company-image {
   margin-right: 2em;
@@ -132,18 +141,14 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border: var(--border);
+  position: relative;
+  background: white;
+  z-index: 3;
 }
-.experience-projects .experience-project .project-or-company-image .iframe-container {
-  width: 300px !important;
-  height: 100% !important;
-  -o-object-fit: cover;
-     object-fit: cover;
-  
-}
-.iframe{
-
-  width:100% !important;
-  height:100% !important;
+.experience-projects .experience-project .project-or-company-work-details {
+  background: white;
+  position: relative;
+  z-index: 3;
 }
 .experience-projects .experience-project .project-or-company-work-details .link {
   color: black;
@@ -294,7 +299,12 @@ e {
   position: relative;
 }
 
-.e-p-wrapper, .s-p-wrapper {
+.e-p-wrpper {
+  position: relative;
+  z-index: 3;
+}
+
+.s-p-wrapper {
   position: relative;
   z-index: 3;
   background: #f7f7f7;
@@ -347,7 +357,6 @@ e {
   width: 80%;
   bottom: -66px;
   right: 10%;
-  border: 2px solid rgba(62, 62, 62, 0.436);
   border: 2px solid white;
   border-top: none;
   border-bottom: none;
@@ -357,7 +366,6 @@ e {
 .tree-line3 {
   position: absolute;
   height: 82px;
-  border-right: 2px solid rgba(62, 62, 62, 0.436);
   border-right: 2px solid white;
   bottom: -82px;
   width: 5px;
@@ -434,8 +442,40 @@ e {
   right: 42%;
 }
 
+.tree-line9 {
+  position: absolute;
+  border: 2px solid white;
+  height: 100px;
+  top: 0;
+  right: 25%;
+  width: 50%;
+}
+
+.tree-line10, .tree-line11 {
+  position: absolute;
+  border: 2px solid white;
+  height: 120%;
+  top: 50%;
+  left: -40px;
+  width: 150px;
+  border-right: none;
+  border-radius: 25px;
+}
+
+.tree-line11 {
+  right: -40px;
+  left: unset;
+  border-left: none;
+  border-right: 2px solid white;
+}
+
 .d-none {
   display: none;
+}
+
+.iframe-container {
+  width: 300px;
+  height: 100%;
 }
 
 .msg-pop-up {
@@ -568,9 +608,6 @@ example {
   .profile-intro .p-i-container .p-i-left .p-i-left-container img {
     transition-duration: 0.5s;
   }
-  .profile-intro .p-i-container .p-i-left .p-i-left-container img {
-    transition-duration: 0.5s !important;
-  }
   .experience-projects .e-p-container {
     width: 800px;
     margin: auto;
@@ -600,6 +637,9 @@ example {
   .d-none {
     display: block;
     color: rgba(31, 34, 37, 0.2705882353);
+  }
+  .tree-line10, .tree-line11 {
+    display: none;
   }
 }
 @media only screen and (max-width: 850px) {
@@ -690,12 +730,8 @@ example {
        object-fit: cover;
     margin-bottom: 0.5em !important;
   }
-   .experience-projects .e-p-container .experience-project .project-or-company-image .iframe-container {
-    width: 100% !important;
-    height: 150px !important;
-    -o-object-fit: cover;
-       object-fit: cover;
-    margin-bottom: 0.5em !important;
+  .iframe-container {
+    width: 100%;
   }
   .side-projects .s-p-container {
     width: 93%;
@@ -746,5 +782,4 @@ example {
     width: 100%;
     height: 150px;
   }
-  
 }/*# sourceMappingURL=index.css.map */

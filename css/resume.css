@@ -349,6 +349,7 @@ body {
 .navigation-container .navigation {
   position: sticky;
   top: 4em;
+  color: rgba(240, 230, 140, 0.2156862745);
 }
 
 .zero-gravity {

@@ -202,7 +202,7 @@ function run_mondrianish(){
 }
 
 run_mondrianish()
-setInterval(run_mondrianish, 10000);
+
 // Message pop up
 
 function toggle_contact(){
@@ -238,7 +238,7 @@ const draw = () => {
 	context.fillStyle = '#1f222545';
 	context.fillRect(0, 0, canvas.width, canvas.height);
 	
-	context.fillStyle = '#f0e68c4b';
+	context.fillStyle = '#f0e68c37';
 	context.font = fontSize + 'px monospace';
   context.globalAlpha = 0.5
 	for(let i = 0; i < rainDrops.length; i++)
