@@ -476,6 +476,8 @@ e {
 .iframe-container {
   width: 300px;
   height: 100%;
+  position: relative;
+  z-index: 5;
 }
 
 .msg-pop-up {
